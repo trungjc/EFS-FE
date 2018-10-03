@@ -1,0 +1,136 @@
+.dark {
+    line-height: 1.4;
+    font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-align: left;
+    color: #3f4652;
+    background-color: #3f4652;
+    background-image: url('../../../assets/images/resources/bg_blur.jpg');
+    background-size: cover;
+    background-position: 0 0;
+    height: 100vh;
+}
+
+.signupFormContainerIe11MinheightHackWrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.signupFormContainer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 60px 0;
+}
+
+.signupFormContainer__inner {
+    position: relative;
+    z-index: 10;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.signupFormContainer__quotes {
+    padding-left: 40px;
+    width: 295px;
+}
+
+.quotes {
+    color: #fff;
+    text-shadow: 0 1px 2px #444;
+}
+
+.quotes__quote {
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.quotes__quote--important {
+    font-size: 22px;
+    margin-top: 0;
+    font-weight: 600;
+}
+
+.quotes__quote--important small {
+    font-weight: 400;
+    opacity: .8;
+}
+
+.quotes__quote--subheading {
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.quotes__cite {
+    display: block;
+    opacity: .5;
+    font-size: 14px;
+}
+
+.quotes__cite:before {
+    content: 'â€“ ';
+}
+
+.form-login {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    form {
+        z-index: 10;
+        background-color: #fff;
+        padding: 65px 40px;
+        text-align: center;
+        border-radius: 10px;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: subpixel-antialiased;
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin-top: 50px;
+        min-width: 450px;
+        max-width: 450px;
+        transition: transform .05s ease, padding .5s ease;
+        .logo-qrs {
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            margin-left: -50px;
+            cursor: pointer;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #20c4cb;
+            padding-top: 20px;
+            img {
+                width: 100%;
+                max-width: 75px;
+            }
+        }
+        .btn-fill {
+            width: 100%;
+        }
+    }
+}
+
+.form__title {
+    margin: 15px 0;
+    font-size: 22px;
+    font-weight: 300;
+    color: #3f4652;
+}

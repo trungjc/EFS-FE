@@ -1,0 +1,74 @@
+{
+    "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+    "project": {
+        "name": "digital-signage"
+    },
+    "apps": [{
+        "root": "src",
+        "outDir": "dist",
+        "assets": [
+            "assets",
+            "favicon.ico"
+        ],
+        "index": "index.html",
+        "main": "main.ts",
+        "polyfills": "polyfills.ts",
+        "test": "test.ts",
+        "tsconfig": "tsconfig.app.json",
+        "testTsconfig": "tsconfig.spec.json",
+        "prefix": "app",
+        "styles": [
+            "assets/vendor/font-awesome/css/fontawesome-all.css",
+            "assets/vendor/animate.css/animate.css",
+            "assets/vendor/bootstrap/css/bootstrap.min.css",
+            "assets/vendor/bootstrap/css/bootstrap-datetimepicker.css",
+            "assets/vendor/bootstrap/css/datepicker.min.css",
+            "assets/vendor/bootstrap/css/bootstrap-colorpicker.min.css",
+            "assets/vendor/velocity/css/popup-effect.css",
+            "assets/vendor/slick/css/slick.css",
+            "styles.scss"
+        ],
+        "scripts": [
+            "assets/vendor/bootstrap/js/jquery-3.2.1.min.js",
+            "assets/vendor/bootstrap/js/bootstrap.min.js",
+            "assets/vendor/bootstrap/js/bootstrap-colorpicker.min.js",
+            "assets/vendor/bootstrap/js/bootstrap-datepicker.js",
+            "assets/vendor/bootstrap/js/momen.js",
+            "assets/vendor/bootstrap/js/bootstrap-datetimepicker.js",
+            "assets/vendor/bootstrap/js/jquery.bootstrap.js",
+            "assets/vendor/slick/js/slick.js"
+        ],
+        "environmentSource": "environments/environment.ts",
+        "environments": {
+            "dev": "environments/environment.ts",
+            "prod": "environments/environment.prod.ts"
+        }
+    }],
+    "e2e": {
+        "protractor": {
+            "config": "./protractor.conf.js"
+        }
+    },
+    "lint": [{
+            "project": "src/tsconfig.app.json",
+            "exclude": "**/node_modules/**"
+        },
+        {
+            "project": "src/tsconfig.spec.json",
+            "exclude": "**/node_modules/**"
+        },
+        {
+            "project": "e2e/tsconfig.e2e.json",
+            "exclude": "**/node_modules/**"
+        }
+    ],
+    "test": {
+        "karma": {
+            "config": "./karma.conf.js"
+        }
+    },
+    "defaults": {
+        "styleExt": "css",
+        "component": {}
+    }
+}

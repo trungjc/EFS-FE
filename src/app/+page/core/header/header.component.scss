@@ -1,0 +1,44 @@
+header {
+    position: relative;
+    z-index: 99;
+    .header-top {
+        min-height: 65px;
+        background-color: #fff;
+        padding-top: 15px;
+        .left-top {
+            float: left;
+            color: #1e1e1e;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .right-top {
+            float: right;
+            .search {
+                float: left;
+                position: relative;
+                input {
+                    border: 1px solid #aaa;
+                    outline: none;
+                    border-radius: 50px;
+                    width: 395px;
+                    height: 34px;
+                    padding: 15px;
+                    padding-right: 30px;
+                }
+                a {
+                    position: absolute;
+                    top: 1px;
+                    font-size: 24px;
+                    right: 6px;
+                    color: #969696;
+                }
+            }
+            .navbar-nav {
+                float: right;
+            }
+        }
+    }
+    ul {
+        list-style: none;
+    }
+}

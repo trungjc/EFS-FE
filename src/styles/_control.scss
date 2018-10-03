@@ -1,0 +1,47 @@
+.form-control {
+    border-radius: 0;
+    color: #4d535b;
+    box-shadow: none;
+    &:focus {
+        border-color: #009cdf;
+    }
+}
+
+.button {
+    padding: 8px 50px;
+    color: #fff !important;
+    font-size: 16px;
+    font-family: 'Lato-Medium';
+    margin-right: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.85;
+        text-decoration: none;
+    }
+    &.bttn-primary {
+        border: 1px solid #009cdf;
+        background: #009cdf;
+    }
+    &.bttn-secondary {
+        border: 1px solid #87b87f;
+        background: #87b87f;
+    }
+    &.bttn-third {
+        border: 1px solid #ef455a;
+        background: #ef455a;
+    }
+    &.bttn-default {
+        border: 1px solid #d9d9d9;
+        background: #ededed!important;
+        background-image: -webkit-linear-gradient(top, #f4f4f4 0, #e6e6e6 100%);
+        background-image: -o-linear-gradient(top, #f4f4f4 0, #e6e6e6 100%);
+        background-image: linear-gradient(to bottom, #f4f4f4 0, #e6e6e6 100%);
+        background-repeat: repeat-x!important;
+        color: #5a5a5a !important;
+    }
+    &.upload-btn {
+        width: 100%;
+        margin-right: 0;
+    }
+}

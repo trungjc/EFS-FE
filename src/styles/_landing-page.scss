@@ -1,0 +1,108 @@
+.template-top-banner {
+    background-color: #f2f1ef;
+    padding: 0 7px;
+    min-height: 481px;
+    h1,
+    h2 {
+        margin: 0;
+    }
+    img {
+        max-width: 100%;
+    }
+    .top-time {
+        height: 50px;
+        background-color: #fff;
+        margin-bottom: 7px;
+        text-transform: uppercase;
+        font-size: 20px;
+        padding: 16px 15px;
+        i {
+            font-weight: normal;
+            margin-right: 10px;
+        }
+    }
+    .event-name {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .event-info {
+        background-color: #fff;
+        padding: 7px;
+        position: relative;
+        .date,
+        .time {
+            padding: 0;
+        }
+        .dash-line {
+            border-top: 1px dashed #b3b3b3;
+            margin: 10px 0;
+        }
+        &:before,
+        &:after {
+            content: "";
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            top: 40%;
+            border-radius: 50%;
+            background-color: #f2f1ef;
+        }
+        &:before {
+            left: -7px;
+        }
+        &:after {
+            right: -7px;
+        }
+    }
+    .result {
+        display: table;
+        width: 100%;
+        >div {
+            display: table-cell;
+            vertical-align: top;
+            &.qr-code {
+                width: 45%;
+            }
+        }
+    }
+    .ticket-info {
+        padding: 3px 7px 0 7px;
+        p {
+            color: #8e8c8d;
+            text-transform: uppercase;
+            margin-bottom: 0;
+        }
+        span {
+            color: #e85231;
+            font-weight: bold;
+            margin: 7px 0;
+            font-size: 16px;
+            display: block;
+        }
+    }
+    .address {
+        margin: 10px 0;
+        padding: 7px;
+        background-size: cover;
+        min-height: 40px;
+    }
+}
+
+.btn-action {
+    a {
+        padding: 7px;
+        display: block;
+        &.disable-click {
+            background-color: #999999;
+            box-shadow: 0 2px 2px 0 rgba(153, 153, 153, 0.14), 0 3px 1px -2px rgba(153, 153, 153, 0.2), 0 1px 5px 0 rgba(153, 153, 153, 0.12);
+            pointer-events: none;
+        }
+    }
+}
+
+.wizard-container {
+    .template-top-banner {
+        height: 481px;
+        overflow: auto;
+    }
+}

@@ -1,0 +1,48 @@
+<div class="dark">
+    <div class="signupFormContainerIe11MinheightHackWrapper">
+
+        <div class="signupFormContainer" style="min-height:100vh">
+            <div class="signupFormContainer__inner">
+                <div class="form-login">
+                    <form class="form-signin" (ngSubmit)="onLogin()" #f="ngForm">
+                        <a class="logo-qrs">
+                            <img src="./assets/images/resources/qrs_logo.png" />
+                        </a>
+                        <h1 class="form__title">Đăng nhập để có trải nghiệm tốt hơn!</h1>
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="fa fa-user"></i>
+                            </span>
+                            <div class="form-group label-floating">
+                                <label class="control-label">Tên đăng nhập</label>
+                                <input type="text" class="form-control" ngModel name="username">
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="fa fa-key"></i>
+                            </span>
+                            <div class="form-group label-floating">
+                                <label class="control-label">Mật khẩu</label>
+                                <input type="password" class="form-control" ngModel name="password" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="alert alert-warning" *ngIf="message!==''">
+                            {{message}}
+                        </div>
+                        <div>
+                            <button type="submit" class="btn btn-fill btn-info">Đăng nhập</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="signupFormContainer__quotes quotes">
+                    <p class="quotes__quote--important">Giải pháp QRCode hiệu quả cho doanh nghiệp của bạn.</p>
+                    <p class="quotes__quote--subheading"> Tăng cường khả năng marketing. Khám phá sức sáng tạo. </p>
+                    <p class="quotes__quote">
+                        <q>Chúng tôi cung cấp giải pháp QRCode tổng thê cho bạn.</q> <cite class="quotes__cite">Mr.Hà</cite>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
