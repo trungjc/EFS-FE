@@ -2,17 +2,6 @@ img {
     max-width: 100%;
 }
 
-.see-more {
-    display: inline-block;
-    font-family: 'Montserrat-Bold';
-    text-transform: uppercase;
-    color: #fff;
-    border: 1px solid #fff;
-    border-radius: 35px;
-    padding: 14px 24px;
-    margin-bottom: 25px;
-}
-
 .next-page {
     display: inline-block;
     img {
@@ -74,7 +63,8 @@ img {
     h2 {
         color: #fff;
         font-size: 38px;
-        font-family: 'Montserrat-Bold';
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
         margin: 0;
         margin-bottom: 40px;
     }
@@ -90,11 +80,13 @@ img {
             margin-bottom: 25px;
         }
         .product-name {
-            font-family: 'Montserrat-Bold';
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
             color: #007D2C;
         }
         .short-des {
-            font-family: 'Montserrat-Bold';
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
             color: #fff;
         }
     }
@@ -159,7 +151,8 @@ img {
     h2 {
         color: #fff;
         font-size: 38px;
-        font-family: 'Montserrat-Bold';
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
         margin: 0;
         margin-bottom: 40px;
     }
@@ -232,13 +225,14 @@ img {
     h2 {
         color: #fff;
         font-size: 38px;
-        font-family: 'Montserrat-Bold';
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
         margin: 0;
         margin-bottom: 40px;
     }
     .list {
         margin-bottom: 30px;
-        >div{
+        >div {
             padding: 0 7px;
         }
     }
@@ -249,7 +243,8 @@ img {
         h3 {
             font-size: 20px;
             color: #666666;
-            font-family: 'Montserrat-Light';
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
         }
         p {
             color: #666666;
@@ -293,7 +288,8 @@ img {
                     background-color: #007D2C;
                     color: #fff;
                     text-transform: uppercase;
-                    font-family: 'Montserrat-Bold';
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 700;
                     font-size: 7px;
                     padding: 6px 14px;
                     border-radius: 15px;
@@ -357,7 +353,8 @@ img {
     h2 {
         color: #fff;
         font-size: 38px;
-        font-family: 'Montserrat-Bold';
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
         margin: 0;
         margin-bottom: 40px;
     }
@@ -382,7 +379,8 @@ img {
                 }
                 h3 {
                     font-size: 22px;
-                    font-family: 'Montserrat-Light';
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 300;
                 }
                 p {
                     font-size: 16px;
@@ -416,7 +414,8 @@ img {
                                 }
                             }
                             h4 {
-                                font-family: 'Montserrat-Light';
+                                font-family: 'Montserrat', sans-serif;
+                                font-weight: 300;
                                 font-size: 14px;
                                 margin-bottom: 5px;
                             }
@@ -465,7 +464,8 @@ img {
     h2 {
         color: #fff;
         font-size: 38px;
-        font-family: 'Montserrat-Bold';
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
         margin: 0;
         margin-bottom: 40px;
     }
@@ -473,7 +473,7 @@ img {
         margin-bottom: 40px;
         >div {
             padding: 0 7px;
-        }        
+        }
     }
     .list-news {
         color: #fff;
@@ -482,7 +482,7 @@ img {
         background-repeat: no-repeat;
         padding: 20px 5px;
         text-align: left;
-        margin-bottom: 15px;        
+        margin-bottom: 15px;
         .header {
             font-size: 12px;
             span {
@@ -496,7 +496,8 @@ img {
         }
         h3 {
             font-size: 22px;
-            font-family: 'Montserrat-Light';
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
             margin-top: 20px;
         }
         .author {
@@ -511,6 +512,84 @@ img {
             .see-more {
                 padding: 5px 12px;
                 font-size: 10px;
+            }
+        }
+    }
+}
+
+.stock-section {
+    background-image: url('../../../../assets/images/resources/map.png');
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    h3 {
+        color: #fff;
+        font-size: 24px;
+        margin: 0;
+        margin-bottom: 10px;
+        span {
+            color: #DF1722;
+        }
+    }
+    h2 {
+        color: #fff;
+        font-size: 38px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+    .stock-input {
+        background-color: rgba(0, 0, 0, 0.85);
+        min-height: 435px;
+        position: relative;
+        color: #fff;
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        p {
+            font-size: 24px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+        }
+        span {
+            font-family: 'Lato-Regular';
+            font-size: 16px;
+            display: block;
+            margin-bottom: 30px;
+        }
+        .suburb-input {
+            position: relative;
+            max-width: 320px;
+            margin: 0 auto;
+            input {
+                width: 100%;
+                height: 50px;
+                background-color: #F0F0F0;
+                color: #000;
+                font-family: 'Lato-Regular';
+                outline: 0;
+                box-shadow: none;
+                padding: 15px;
+                border: 0;
+                border-radius: 30px;
+            }
+            a {
+                width: 32px;
+                height: 32px;
+                background-color: #DF1722;
+                border-radius: 50%;
+                display: inline-block;
+                position: absolute;
+                top: 10px;
+                right: 13px;
+                padding: 5px;
             }
         }
     }

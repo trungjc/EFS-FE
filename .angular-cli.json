@@ -24,6 +24,7 @@
             "assets/vendor/bootstrap/css/bootstrap-datetimepicker.css",
             "assets/vendor/bootstrap/css/datepicker.min.css",
             "assets/vendor/bootstrap/css/bootstrap-colorpicker.min.css",
+            "assets/vendor/bootstrap/css/jquery.mobile-1.4.5.min.css",
             "assets/vendor/velocity/css/popup-effect.css",
             "assets/vendor/slick/css/slick.css",
             "styles.scss"
@@ -36,6 +37,7 @@
             "assets/vendor/bootstrap/js/momen.js",
             "assets/vendor/bootstrap/js/bootstrap-datetimepicker.js",
             "assets/vendor/bootstrap/js/jquery.bootstrap.js",
+            "assets/vendor/bootstrap/js/jquery.mobile-1.4.5.min.js",
             "assets/vendor/slick/js/slick.js"
         ],
         "environmentSource": "environments/environment.ts",

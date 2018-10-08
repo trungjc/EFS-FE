@@ -16,39 +16,48 @@
                         <li class="nav-item"><a class="nav-link" href="#">My Account</a> </li>
                         <li class="nav-item m-l-2">
                             <div class="user-avatar dropdown">
-                                <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
                                     <a href="#" class="login-name">
                                         <i class="fa fa-shopping-cart"></i>
                                         <span>3</span>
                                     </a>
                                 </div>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <div class="dropdown-menu drop-cart" aria-labelledby="dropdownMenuButton">
                                     <ul class="cart">
                                         <li>
-                                            <div class="image"></div>
+                                            <div class="image">
+                                                <img src="./assets/images/resources/iphonese-rosegold-select-2016-mask-20.png">
+                                            </div>
                                             <div class="text">
                                                 <h4>300mm Bore sock</h4>
-                                                <div>lorem ipsum dolor</div>
+                                                <p>lorem ipsum dolor</p>
                                             </div>
                                             <div class="price">
-                                                <input type="number" class="qty">
-                                                <span class="price"><span> $ </span> 39</span>
-                                                <span class="remove"></span>
+                                                <input type="number" class="qty" value="2">
+                                                <span class="price-num"><sub> $ </sub> 39</span>
+                                                <span class="remove">x</span>
                                             </div>
                                         </li>
                                         <li>
-                                            <div class="image"></div>
+                                            <div class="image">
+                                                <img src="./assets/images/resources/iphonese-rosegold-select-2016-mask-20.png">
+                                            </div>
                                             <div class="text">
                                                 <h4>300mm Bore sock</h4>
-                                                <div>lorem ipsum dolor</div>
+                                                <p>lorem ipsum dolor</p>
                                             </div>
                                             <div class="price">
-                                                <input type="number" class="qty">
-                                                <span class="price"><span> $ </span> 39</span>
-                                                <span class="remove"></span>
+                                                <input type="number" value="1" class="qty">
+                                                <span class="price-num"><sub> $ </sub> 39</span>
+                                                <span class="remove">x</span>
                                             </div>
                                         </li>
+                                        <li class="total-price">
+                                            <span>TOTAL COST</span><span class="price-num"><sub> $ </sub> 39</span>
+                                        </li>
                                     </ul>
+                                    <a class="btn-green" href="#">VIEW CART & CHECKOUT</a>
                                 </div>
                             </div>
                         </li>
@@ -57,115 +66,107 @@
             </div>
         </div>
     </div>
-    <!-- <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">
-                <img src="assets/images/logo.png">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item current-item">
-                        <a class="nav-link" href="#">Home</a>
-
-                    </li>
-                    <li class="nav-item has-child">
-                        <a class="nav-link " href="#">About efs?</a>
-                        <span class="caret"></span>
-                        <div class="megamenu-sub">
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-3"></div>
-                                <div class="col-xs-12 col-sm-9">
-                                    <div class="col">
-                                        <h3>EFS TV</h3>
-                                        <ul class="sub-menu level-1">
-                                            <li><a href="#">Inspiration gallery</a> </li>
-                                            <li><a href="#">Featured projects</a> </li>
-                                            <li><a href="#">Colour selection tool</a> </li>
-                                            <li><a href="#">Ekodeck in the media</a> </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col">
-                                        <h3>EFS News</h3>
-                                        <ul class="sub-menu level-1">
-                                            <li><a href="#">Inspiration gallery</a> </li>
-                                            <li><a href="#">Featured projects</a> </li>
-                                            <li><a href="#">Colour selection tool</a> </li>
-                                            <li><a href="#">Ekodeck in the media</a> </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col">
-                                        <h3>Hardware</h3>
-                                        <ul class="sub-menu level-1">
-                                            <li><a href="#">Inspiration gallery</a> </li>
-                                            <li><a href="#">Featured projects</a> </li>
-                                            <li><a href="#">Colour selection tool</a> </li>
-                                            <li><a href="#">Ekodeck in the media</a> </li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="col">
-                                        <h3>Performance</h3>
-                                        <ul class="sub-menu level-1">
-                                            <li><a href="#">Inspiration gallery</a> </li>
-                                            <li><a href="#">Featured projects</a> </li>
-                                            <li><a href="#">Colour selection tool</a> </li>
-                                            <li><a href="#">Ekodeck in the media</a> </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Product range</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Catalogue</a>
-                    </li>
-
-                    <li class="nav-item has-child">
-                        <a class="nav-link" href="#">Find a stockists</a>
-                        <span class="caret"></span>
-                        <div class="megamenu-sub">
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-3"></div>
-                                <div class="col-xs-12 col-sm-9">
-                                    <div class="col">
-                                        <h3>EFS TV</h3>
-                                        <ul class="sub-menu level-1">
-                                            <li><a href="#">Inspiration gallery</a> </li>
-                                            <li><a href="#">Featured projects</a> </li>
-                                            <li><a href="#">Colour selection tool</a> </li>
-                                            <li><a href="#">Ekodeck in the media</a> </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col">
-                                        <h3>EFS News</h3>
-                                        <ul class="sub-menu level-1">
-                                            <li><a href="#">Inspiration gallery</a> </li>
-                                            <li><a href="#">Featured projects</a> </li>
-                                            <li><a href="#">Colour selection tool</a> </li>
-                                            <li><a href="#">Ekodeck in the media</a> </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Media</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact us</a>
-                    </li>
-
-                </ul>
+    <div class="nav-menu">
+        <div class="container ">
+            <div class="resmenu-container">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#ResMenuprimary_menu">
+                    <span class="sr-only">Categories</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
             </div>
-        </nav>
-    </div> -->
+
+            <ul class="nav">
+                <li class="nav-logo">
+                    <img src="./assets/images/resources/logo.png">
+                </li>
+                <li class="nav-item current-item">
+                    <a class="nav-link" href="#">Home</a>
+
+                </li>
+                <li class="nav-item dropdown-sub sub-menu ">
+                    <a class="nav-link " href="#">About efs?</a>
+                    <span class="caret"></span>
+                    <ul class="dropdown-menu">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-3">
+                                <img src="./assets/images/resources/rectangle-21.png">
+                            </div>
+                            <div class="col-xs-12 col-sm-9">
+                                <ul class="sub-menu-reng">
+                                    <li>
+                                        <h3>SUSPENSION</h3>
+                                        <a>SHOCKS</a>
+                                        <a>COIL SPRINGS</a>
+                                        <a>LEAF SPRINGS</a>
+                                        <a>STEERING DAMPNERS</a>
+                                        <a>TORSION BARS</a>
+                                        <a>BUSHES</a>
+                                        <a>COMPONENTS</a>
+                                    </li>
+                                    <li>
+                                        <h3>PROTECTION</h3>
+                                        <a>BULLBARS</a>
+                                        <a> REAR BARS</a>
+                                        <a>SIDE STEPS</a>
+                                    </li>
+                                    <li>
+                                        <h3>HARDWARE</h3>
+                                        <a>LIGHTING</a>
+                                        <a>WINCHES</a>
+                                    </li>
+                                    <li>
+                                        <h3>PERFORMANCE</h3>
+                                        <a>CHIP MODULES</a>
+                                        <a>SNORKELS</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Product range</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Catalogue</a>
+                </li>
+
+                <li class="nav-item dropdown-sub sub-menu ">
+                    <a class="nav-link" href="#">Find a stockists</a>
+                    <span class="caret"></span>
+                    <ul class="dropdown-menu">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-3">
+                                <img src="./assets/images/resources/Rectangle 75.png">
+                            </div>
+                            <div class="col-xs-12 col-sm-9">
+                                <ul class="sub-menu-reng">
+                                    <li>
+                                        <h3>EFS TV</h3>
+                                        <a>LATEST VIDEO</a>
+                                        <a>PRODUCT VIDEOS</a>
+                                        <a>TRAVEL RELATED</a>
+                                    </li>
+                                    <li>
+                                        <h3>EFS NEWS</h3>
+                                        <a>LATEST NEWS</a>
+                                        <a>PRODUCT SHOWCASES</a>
+                                        <a>EFS STORIES</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Media</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </header>
