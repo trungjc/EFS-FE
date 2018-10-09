@@ -21,23 +21,23 @@ export class AppComponent implements OnInit, OnDestroy {
     }
     public ngOnInit(): void {
         //common function run
-        toastr.options = {
-            "closeButton": false,
-            "debug": false,
-            "newestOnTop": false,
-            "progressBar": false,
-            "positionClass": "toast-top-right",
-            "preventDuplicates": false,
-            "onclick": null,
-            "showDuration": "300",
-            "hideDuration": "1000",
-            "timeOut": "6000",
-            "extendedTimeOut": "1000",
-            "showEasing": "swing",
-            "hideEasing": "linear",
-            "showMethod": "fadeIn",
-            "hideMethod": "fadeOut"
-        }
+        // toastr.options = {
+        //     "closeButton": false,
+        //     "debug": false,
+        //     "newestOnTop": false,
+        //     "progressBar": false,
+        //     "positionClass": "toast-top-right",
+        //     "preventDuplicates": false,
+        //     "onclick": null,
+        //     "showDuration": "300",
+        //     "hideDuration": "1000",
+        //     "timeOut": "6000",
+        //     "extendedTimeOut": "1000",
+        //     "showEasing": "swing",
+        //     "hideEasing": "linear",
+        //     "showMethod": "fadeIn",
+        //     "hideMethod": "fadeOut"
+        // }
         //toastr style
         // ---toastr.success('Lưu thành công');
         // ---toastr.error(this.message);

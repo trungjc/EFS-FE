@@ -101,7 +101,7 @@
                 </div>
                 <div class="col-xs-6">
                     <img src="./assets/images/resources/constant_p2.png" />
-                    <ul>
+                    <ul class="green-list">
                         <li>13,000lbs / 5,900kg rated single line pull</li>
                         <li>6.0HP 12volt series wound balanced electric motor waterproof motor/gearbox</li>
                         <li>3 stage zinc plated hardened planetary gears </li>
@@ -289,12 +289,12 @@
             <h3>Landcruiser 200 Series <br>Xtreme strut and shocks</h3>
             <p>The boys show you whats new on the 2018 Xtreme strut and why you should seriously consider getting a set
                 for you rig.</p>
-            <a class="btn-red">watch now</a>
+            <a class="btn-red c-pointer" (click)="playVideo()">watch now</a>
         </div>
         <div class="vid-list">
             <ul>
                 <li>
-                    <a>
+                    <a class="c-pointer" (click)="playVideo()">
                         <div class="thumb">
                             <img src="./assets/images/resources/vid_list.png">
                         </div>
@@ -308,7 +308,7 @@
                     </a>
                 </li>
                 <li class="active">
-                    <a>
+                    <a class="c-pointer" (click)="playVideo()">
                         <div class="thumb">
                             <img src="./assets/images/resources/vid_list.png">
                         </div>
@@ -322,7 +322,7 @@
                     </a>
                 </li>
                 <li>
-                    <a>
+                    <a class="c-pointer" (click)="playVideo()">
                         <div class="thumb">
                             <img src="./assets/images/resources/vid_list.png">
                         </div>
@@ -519,21 +519,20 @@
         </div>
     </div>
 </section>
-<section class="stock-section">
-    <div class="clearfix">
-        <div class="col-md-6 stock-input">
-            <div class="content">
-                <h3>FIND YOUR <span> NEAREST </span></h3>
-                <h2>STOCKIST</h2>
-                <p>Enter your Postcode or Suburb</p>
-                <span>With over 100 stockists Australia wide we are guarenteed to be close to you.</span>
-                <div class="suburb-input">
-                    <form>
-                        <input type="text" placeholder="Enter Postcode or Suburb" />
-                        <a type="submit"><img src="./assets/images/resources/arrow_right.png" /></a>
-                    </form>
-                </div>
+<app-find-stock></app-find-stock>
+
+<div id="modalVideo" data-color="red" class="modal wizard-card" data-easein="slideUpBigIn" tabindex="-1" role="dialog"
+    aria-labelledby="costumModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    ×
+                </button>
+            </div>
+            <div>
+                <img src="./assets/images/resources/video_thumb_2.png" />
             </div>
         </div>
     </div>
-</section>
+</div>

@@ -22,7 +22,7 @@ import { HomePageModule } from './home-page/home-page.module';
   declarations: [
     PageComponent,
     HeaderComponent,
-    FooterComponent    
+    FooterComponent,
   ],
   providers: [
     AuthAdminGuard

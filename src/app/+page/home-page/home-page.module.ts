@@ -8,6 +8,7 @@ import { EfsTVComponent } from './efs-tv/efs-tv.component';
 import { StoryComponent } from './story/story.component';
 import { ShopCategoryComponent } from './shop-category/shop-category.component';
 import { ShopDetailComponent } from './shop-detail/shop-detail.component';
+import { FindStockComponent } from '../core/findStock/findStock.component';
 @NgModule({
   imports: [
     CommonModule, 
@@ -20,7 +21,8 @@ import { ShopDetailComponent } from './shop-detail/shop-detail.component';
     EfsTVComponent,
     StoryComponent,
     ShopCategoryComponent,
-    ShopDetailComponent
+    ShopDetailComponent,
+    FindStockComponent
   ], 
 })
 export class HomePageModule { }

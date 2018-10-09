@@ -38,7 +38,9 @@
             "assets/vendor/bootstrap/js/bootstrap-datetimepicker.js",
             "assets/vendor/bootstrap/js/jquery.bootstrap.js",
             "assets/vendor/bootstrap/js/jquery.mobile-1.4.5.min.js",
-            "assets/vendor/slick/js/slick.js"
+            "assets/vendor/slick/js/slick.js",
+            "assets/vendor/velocity/js/velocity.min.js",
+            "assets/vendor/velocity/js/velocity.ui.min.js"
         ],
         "environmentSource": "environments/environment.ts",
         "environments": {

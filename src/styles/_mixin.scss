@@ -159,7 +159,7 @@ $xxs-width: 481px;
     }
 }
 @mixin lg {
-    @media screen and (min-width: #{$lg-width}) {
+    @media (min-width: #{$lg-width}) and (max-width: #{$xlg-width - 1px}) {
         @content;
     }
 }

@@ -2,12 +2,14 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
 }
-.slick-slide{
+
+.slick-slide {
     text-align: center;
-    img{
+    img {
         display: inline-block;
     }
 }
+
 h3.strong-title {
     color: #fff;
     font-size: 24px;
@@ -17,6 +19,7 @@ h3.strong-title {
         color: #DF1722;
     }
 }
+
 h2.medium-title {
     color: #fff;
     font-size: 38px;
@@ -25,6 +28,7 @@ h2.medium-title {
     margin: 0;
     margin-bottom: 40px;
 }
+
 .btn-green {
     font-weight: 700;
     color: #fff;
@@ -33,11 +37,12 @@ h2.medium-title {
     display: block;
     text-align: center;
     padding: 10px 0;
-    &:hover{
+    &:hover {
         text-decoration: none;
         opacity: 0.8;
     }
 }
+
 .see-more {
     display: inline-block;
     font-family: 'Montserrat', sans-serif;
@@ -48,4 +53,73 @@ h2.medium-title {
     border-radius: 35px;
     padding: 14px 24px;
     margin-bottom: 25px;
+}
+
+.bread-cumb {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    float: left;
+    li {
+        font-size: 16px;
+        font-weight: 700;
+        display: inline-block;
+        position: relative;
+        &::after {
+            content: "\f105";
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            color: #fff;
+            margin: 0 15px;
+        }
+        &:last-child {
+            &::after {
+                content: none;
+            }
+        }
+        a {
+            color: #626262;
+        }
+        span {
+            color: #fff;
+        }
+    }
+}
+
+.green-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+    margin-top: 15px;
+    li {
+        position: relative;
+        color: #fff;
+        margin-bottom: 5px;
+        padding-left: 20px;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 0;
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background-color: #007D2C;
+        }
+    }
+}
+
+.btn-red {
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #DF1722;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    padding: 8px 24px;
+    display: inline-block;
+}
+
+.c-pointer {
+    cursor: pointer;
 }

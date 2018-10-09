@@ -1,0 +1,34 @@
+<section class="stock-section">
+    <div class="clearfix">
+        <div class="col-md-6 stock-input">
+            <div [ngSwitch]="stock">
+                <div *ngSwitchCase="'search'" class="content">
+                    <h3>FIND YOUR <span> NEAREST </span></h3>
+                    <h2>STOCKIST</h2>
+                    <p>Enter your Postcode or Suburb</p>
+                    <span>With over 100 stockists Australia wide we are guarenteed to be close to you.</span>
+                    <div class="suburb-input">
+                        <form>
+                            <input type="text" placeholder="Enter Postcode or Suburb" />
+                            <a class="c-pointer" type="submit" (click)="searchStock()"><img src="./assets/images/resources/arrow_right.png" /></a>
+                        </form>
+                    </div>
+                </div>
+                <div *ngSwitchCase="'result'" class="result">
+                    <ul>
+                        <li>
+                            <div>
+                                <h3>EFS DIRECT</h3>
+                                <p>1/16 Industrial Ave, Molendinar</p>
+                                <span> 1300 EFS 4WD</span>
+                            </div>
+                            <div>
+                                <a>SET AS MY STORE</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

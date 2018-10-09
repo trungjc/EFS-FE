@@ -1,16 +1,19 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { FunctionService } from '../../../core/shared/function-services';
 declare var $: any
 @Component({
   selector: 'app-home-index',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
-  providers: [], 
+  providers: [FunctionService], 
 })
 export class HomeComponent implements OnInit {
   constructor(
+    private comfunc:FunctionService
   ) { 
   }
   ngOnInit() {  
+    this.comfunc.initPopupEffect()
     $('.multiple-items').slick({
       infinite: true,
       slidesToShow: 3,
@@ -23,4 +26,7 @@ export class HomeComponent implements OnInit {
     });
     
   }  
+  playVideo(){
+    $('#modalVideo').modal('show')
+  }
 }
