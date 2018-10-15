@@ -12,6 +12,7 @@ img {
 
 .slick-slide {
     text-align: center;
+
     img {
         display: inline-block;
     }
@@ -22,6 +23,7 @@ h3.strong-title {
     font-size: 24px;
     margin: 0;
     margin-bottom: 10px;
+
     span {
         color: #DF1722;
     }
@@ -44,6 +46,7 @@ h2.medium-title {
     display: block;
     text-align: center;
     padding: 10px 0;
+
     &:hover {
         text-decoration: none;
         opacity: 0.8;
@@ -60,6 +63,14 @@ h2.medium-title {
     border-radius: 35px;
     padding: 14px 24px;
     margin-bottom: 25px;
+    cursor: pointer;
+    transition: all ease 0.2s;
+
+    &:hover {
+        background-color: #fff;
+        color: #000;
+        text-decoration: none;
+    }
 }
 
 .bread-cumb {
@@ -67,11 +78,13 @@ h2.medium-title {
     margin: 0;
     list-style: none;
     float: left;
+
     li {
         font-size: 16px;
         font-weight: 700;
         display: inline-block;
         position: relative;
+
         &::after {
             content: "\f105";
             font-family: 'Font Awesome 5 Free';
@@ -79,14 +92,17 @@ h2.medium-title {
             color: #fff;
             margin: 0 15px;
         }
+
         &:last-child {
             &::after {
                 content: none;
             }
         }
+
         a {
             color: #626262;
         }
+
         span {
             color: #fff;
         }
@@ -99,11 +115,13 @@ h2.medium-title {
     list-style: none;
     text-align: left;
     margin-top: 15px;
+
     li {
         position: relative;
         color: #fff;
         margin-bottom: 5px;
         padding-left: 20px;
+
         &::before {
             content: "";
             position: absolute;
@@ -134,6 +152,7 @@ h2.medium-title {
 .container-fluid {
     position: relative;
     max-width: 1645px;
+
     @include lg() {
         max-width: 1170px;
     }
@@ -148,6 +167,7 @@ h2.medium-title {
     padding: 12px 34px;
     display: inline-block;
     cursor: pointer;
+
     &:hover {
         text-decoration: none;
         opacity: 0.85;
@@ -157,29 +177,35 @@ h2.medium-title {
 
 .slide-3d {
     .text {
-        opacity: 0
+        opacity: 0;
     }
+
     .text.acitve {
-        opacity: 1
+        opacity: 1;
     }
+
     ol {
         padding: 0;
-        list-style: none
+        list-style: none;
     }
+
     .thumbnail {
         text-align: center;
     }
-    .thumbnail>li {
+
+    .thumbnail > li {
         color: white;
         display: none;
     }
-    .thumbnail>li.acitve {
+
+    .thumbnail > li.acitve {
         display: block;
     }
 }
 
 .next-page {
     display: inline-block;
+
     img {
         width: 70%;
         max-width: 60px !important;
@@ -188,17 +214,19 @@ h2.medium-title {
 
 .nav-tabs-green {
     border-bottom: 0;
-    >li {
-        >a {
+
+    > li {
+        > a {
             font-size: 19px;
             font-weight: 700;
             color: #fff;
             border: 0 !important;
             text-decoration: none !important;
         }
+
         &.active,
         &:hover {
-            >a {
+            > a {
                 background-color: transparent !important;
                 border-bottom: 2px solid #007D2C !important;
                 color: #fff !important;
@@ -221,11 +249,87 @@ select.select-round {
 .table-respon {
     display: table;
     width: 100%;
-    @include device-1(){
+
+    @include device-1() {
         display: block;
     }
-    >div {
+
+    > div {
         display: table-cell;
         vertical-align: top;
+    }
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    z-index: 9;
+    width: 40px;
+    height: 40px;
+    background-color: #007D2C;
+    color: #007D2C;
+    border-radius: 50%;
+    border: 0;
+    overflow: hidden;
+    line-height: 0;
+    text-align: center;
+    outline: 0;
+
+    &:after {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        line-height: 1;
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        color: #fff;
+        font-size: 22px;
+        margin-top: 3px;
+    }
+
+    &.slick-next {
+        right: 0;
+
+        &:after {
+            content: "\f105";
+        }
+    }
+
+    &.slick-prev {
+        left: 0;
+
+        &:after {
+            content: "\f104";
+        }
+    }
+
+    &:hover {
+        opacity: 0.75;
+    }
+}
+
+.red-btn {
+    padding: 8px 22px;
+    background-color: #DF1722;
+    color: #fff;
+    border: 1px solid #fff;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all ease 0.2s;
+    display: inline-block;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: none;
+        background-color: #fff;
+        color: #DF1722;
+        border: 1px solid #DF1722;
     }
 }
