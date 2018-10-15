@@ -1,0 +1,212 @@
+﻿.shop-product-detail {
+    .loating-btn {
+        position: absolute;
+        top: 15px;
+        right: 0;
+    }
+    .banner {
+        background-color: #000;
+        min-height: 100vh;
+        background-image: url('../../assets/images/pd_banner_1.png');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: 1;
+        color: #fff;
+        .strong-title,
+        .medium-title {
+            text-align: center;
+        }
+        .txt-content {
+            position: absolute;
+            right: 100px;
+            bottom: 130px;
+            max-width: 500px;
+            h2 {
+                margin: 0;
+            }
+            h3 {
+                margin: 12px 0;
+            }
+            .md-title {
+                font-size: 45px;
+                font-weight: 700;
+            }
+            .lg-title {
+                font-size: 80px;
+                font-weight: 700;
+                color: #DF1722
+            }
+            .sm-title {
+                font-size: 18px;
+            }
+            p {
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .feature {
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        position: relative;
+        padding: 30px 0;
+        .notice-img {
+            position: relative;
+            .item {
+                max-width: 320px;
+                position: relative;
+                h3 {
+                    font-size: 18px;
+                    font-weight: 700;
+                    margin-bottom: 5px;
+                    margin-top: 0;
+                    position: relative;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 10px;
+                        width: 40px;
+                        height: 40px;
+                        background-image: url('../../assets/images/dont_red.png');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        top: 10px;
+                        border-top: 1px dashed #fff;
+                        margin-left: 30px;
+                    }
+                }
+                p {
+                    font-size: 12px;
+                }
+            }
+            .txt-left {
+                position: absolute;
+                top: 0;
+                left: 0;
+                text-align: left;
+                .item {
+                    &:nth-child(1) {
+                        margin-top: 5px;
+                        h3 {
+                            &::before {
+                                right: -20px;
+                                top: -12px;
+                            }
+                            &:after {
+                                width: 113px;
+                            }
+                        }
+                    }
+                    &:nth-child(2) {
+                        margin-top: 45px;
+                        h3 {
+                            &::before {
+                                right: -25px;
+                                top: -12px;
+                            }
+                            &:after {
+                                width: 100px;
+                            }
+                        }
+                    }
+                    &:nth-child(3) {
+                        margin-top: 30px;
+                        h3 {
+                            &::before {
+                                right: -230px;
+                                top: -12px;
+                            }
+                            &:after {
+                                width: 255px;
+                            }
+                        }
+                    }
+                }
+            }
+            .txt-right {
+                position: absolute;
+                top: 0;
+                right: -80px;
+                text-align: left;
+                .item {
+                    h3 {
+                        &:after {
+                            left: -155px;
+                        }
+                    }
+                    &:nth-child(1) {
+                        margin-top: 20px;
+                        h3 {
+                            &::before {
+                                left: -165px;
+                                top: -8px;
+                            }
+                            &:after {
+                                width: 113px;
+                            }
+                        }
+                    }
+                    &:nth-child(2) {
+                        margin-top: 35px;
+                        h3 {
+                            &::before {
+                                left: -165px;
+                                top: -10px;
+                            }
+                            &:after {
+                                width: 113px;
+                                margin-left: 0;
+                                left: -124px;
+                            }
+                        }
+                    }
+                    &:nth-child(3) {
+                        margin-top: 40px;
+                        h3 {
+                            &::before {
+                                left: -285px;
+                                top: -10px;
+                            }
+                            &:after {
+                                width: 230px;
+                                left: -270px;
+                            }
+                        }
+                    }
+                }
+            }
+            img {
+                max-width: 600px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .detail {
+        background-color: #000;
+        text-align: center;
+        color: #fff;
+        padding: 30px 0;
+        .right-item {
+            text-align: left;
+        }
+        .green-list {
+            margin-bottom: 15px;
+        }
+        #sepcification {
+            p {
+                margin-bottom: 30px;
+            }
+            h2{
+                font-weight: 700;
+                font-size: 14px;
+            }
+        }
+    }
+}

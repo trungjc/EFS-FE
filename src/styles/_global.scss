@@ -1,6 +1,13 @@
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font1;
     font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+    max-width: 100%;
+    display: inline-block;
 }
 
 .slick-slide {
@@ -23,7 +30,7 @@ h3.strong-title {
 h2.medium-title {
     color: #fff;
     font-size: 38px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font1;
     font-weight: 700;
     margin: 0;
     margin-bottom: 40px;
@@ -45,7 +52,7 @@ h2.medium-title {
 
 .see-more {
     display: inline-block;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font1;
     font-weight: 700;
     text-transform: uppercase;
     color: #fff;
@@ -122,4 +129,103 @@ h2.medium-title {
 
 .c-pointer {
     cursor: pointer;
+}
+
+.container-fluid {
+    position: relative;
+    max-width: 1645px;
+    @include lg() {
+        max-width: 1170px;
+    }
+}
+
+.btn-green-border {
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: #007D2C;
+    font-weight: 700;
+    border-radius: 30px;
+    padding: 12px 34px;
+    display: inline-block;
+    cursor: pointer;
+    &:hover {
+        text-decoration: none;
+        opacity: 0.85;
+        color: #fff;
+    }
+}
+
+.slide-3d {
+    .text {
+        opacity: 0
+    }
+    .text.acitve {
+        opacity: 1
+    }
+    ol {
+        padding: 0;
+        list-style: none
+    }
+    .thumbnail {
+        text-align: center;
+    }
+    .thumbnail>li {
+        color: white;
+        display: none;
+    }
+    .thumbnail>li.acitve {
+        display: block;
+    }
+}
+
+.next-page {
+    display: inline-block;
+    img {
+        width: 70%;
+        max-width: 60px !important;
+    }
+}
+
+.nav-tabs-green {
+    border-bottom: 0;
+    >li {
+        >a {
+            font-size: 19px;
+            font-weight: 700;
+            color: #fff;
+            border: 0 !important;
+            text-decoration: none !important;
+        }
+        &.active,
+        &:hover {
+            >a {
+                background-color: transparent !important;
+                border-bottom: 2px solid #007D2C !important;
+                color: #fff !important;
+            }
+        }
+    }
+}
+
+select.select-round {
+    width: 100%;
+    border: 1px solid #AAAAAA;
+    border-radius: 30px;
+    font-size: 15px;
+    color: #656565;
+    padding: 10px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.table-respon {
+    display: table;
+    width: 100%;
+    @include device-1(){
+        display: block;
+    }
+    >div {
+        display: table-cell;
+        vertical-align: top;
+    }
 }
