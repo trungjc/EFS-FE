@@ -135,31 +135,14 @@ h2.medium-title {
     opacity: 0.85;
     color: #fff; }
 
-.slide-3d .text {
-  opacity: 0; }
-
-.slide-3d .text.acitve {
-  opacity: 1; }
-
-.slide-3d ol {
-  padding: 0;
-  list-style: none; }
-
-.slide-3d .thumbnail {
-  text-align: center; }
-
-.slide-3d .thumbnail > li {
-  color: white;
-  display: none; }
-
-.slide-3d .thumbnail > li.acitve {
-  display: block; }
-
 .next-page {
-  display: inline-block; }
+  display: inline-block;
+  cursor: pointer; }
   .next-page img {
     width: 70%;
     max-width: 60px !important; }
+  .next-page :hover {
+    opacity: 0.85; }
 
 .nav-tabs-green {
   border-bottom: 0; }
@@ -246,6 +229,9 @@ select.select-round {
   transition: all ease 0.2s;
   display: inline-block;
   cursor: pointer; }
+  .red-btn i {
+    display: inline-block;
+    margin-left: 15px; }
   .red-btn:hover {
     text-decoration: none;
     background-color: #fff;
@@ -2763,10 +2749,26 @@ header {
       header .header-top .right-top .navbar-nav {
         float: right;
         padding-top: 12px; }
+        header .header-top .right-top .navbar-nav .m-l-2 {
+          margin-left: 20px; }
         header .header-top .right-top .navbar-nav > li > a {
           color: #000;
           font-family: 'Montserrat', sans-serif;
           font-weight: 700; }
+        header .header-top .right-top .navbar-nav .login-name {
+          color: #000; }
+          header .header-top .right-top .navbar-nav .login-name sup {
+            display: inline-block;
+            background-color: #DF1722;
+            color: #fff;
+            width: 15px;
+            height: 15px;
+            text-align: center;
+            border-radius: 50%;
+            top: -10px;
+            line-height: 15px; }
+        header .header-top .right-top .navbar-nav .fa-shopping-cart {
+          color: #000; }
   header ul {
     list-style: none; }
   header .nav-menu {
@@ -2937,7 +2939,6 @@ header {
 /*include page component*/
 .banner-section {
   min-height: 100vh;
-  background-image: url("../../assets/images/banner_1.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2970,8 +2971,7 @@ header {
   position: relative;
   z-index: 1;
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 30px; }
+  padding: 30px 0; }
   .product-section h3 {
     color: #fff;
     font-size: 24px;
@@ -2990,7 +2990,7 @@ header {
     max-width: 90%;
     margin: 0 auto; }
   .product-section .product-info {
-    margin-top: 40px; }
+    margin-top: 340px; }
     .product-section .product-info img {
       display: inline-block;
       max-width: 100%;
@@ -3155,7 +3155,15 @@ header {
           font-weight: 700;
           font-size: 7px;
           padding: 6px 14px;
-          border-radius: 15px; }
+          border-radius: 15px;
+          border: 1px solid #007D2C;
+          transition: all ease 0.15s;
+          cursor: pointer; }
+          .explore-section .product-item .product-box .info a:hover {
+            background-color: #fff;
+            color: #007D2C;
+            border: 1px solid #fff;
+            text-decoration: none; }
 
 .introduce-section {
   min-height: 100vh;
@@ -3253,7 +3261,19 @@ header {
               display: table-cell;
               vertical-align: top; }
               .watch-section .list-vid > div.vid-list ul li a > div.thumb {
-                width: 120px; }
+                width: 120px;
+                position: relative; }
+                .watch-section .list-vid > div.vid-list ul li a > div.thumb .see-more {
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  margin: 0;
+                  padding: 11px 20px; }
+                  .watch-section .list-vid > div.vid-list ul li a > div.thumb .see-more:hover {
+                    background-color: #DF1722;
+                    color: #fff;
+                    border: 1px solid #fff; }
               .watch-section .list-vid > div.vid-list ul li a > div.text {
                 padding-left: 20px; }
             .watch-section .list-vid > div.vid-list ul li a h4 {
@@ -3268,6 +3288,10 @@ header {
               font-size: 8px; }
           .watch-section .list-vid > div.vid-list ul li.active a, .watch-section .list-vid > div.vid-list ul li:hover a {
             background-color: #3E3E3E; }
+          .watch-section .list-vid > div.vid-list ul li.active .see-more, .watch-section .list-vid > div.vid-list ul li:hover .see-more {
+            background-color: #DF1722;
+            color: #fff;
+            border: 1px solid #fff; }
 
 .news-section {
   min-height: 100vh;
@@ -3469,6 +3493,34 @@ header {
           text-align: right; }
           .result ul li > div:last-child a {
             color: #007D2C; }
+
+.slide-3d .product-info {
+  display: none;
+  position: absolute;
+  width: 100%; }
+  .slide-3d .product-info.active {
+    display: block; }
+
+.slide-3d #carousel > li {
+  position: relative; }
+
+.slide-3d #carousel canvas {
+  display: none !important; }
+
+.slide-3d ol {
+  padding: 0;
+  list-style: none; }
+
+.slide-3d .thumbnail-news {
+  text-align: center; }
+
+.slide-3d .thumbnail-news > li {
+  display: none; }
+  .slide-3d .thumbnail-news > li.active {
+    display: block; }
+
+#modalVideo {
+  padding-top: 60px; }
 
 .efs-tv img {
   max-width: 100%; }
@@ -3697,6 +3749,17 @@ header {
   min-height: 100vh;
   padding: 30px 0;
   text-align: center; }
+  .shop-product-detail .vehicles .pop-modal {
+    background-color: #fff;
+    text-align: left; }
+    .shop-product-detail .vehicles .pop-modal h3 {
+      font-weight: 700;
+      margin-bottom: 50px; }
+    .shop-product-detail .vehicles .pop-modal h4 {
+      font-size: 18px;
+      font-weight: 700; }
+  .shop-product-detail .vehicles .loating-btn {
+    position: static; }
 
 .shop-product img {
   max-width: 100%;

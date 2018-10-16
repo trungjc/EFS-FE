@@ -176,39 +176,20 @@ h2.medium-title {
 }
 
 .slide-3d {
-    .text {
-        opacity: 0;
-    }
-
-    .text.acitve {
-        opacity: 1;
-    }
-
-    ol {
-        padding: 0;
-        list-style: none;
-    }
-
-    .thumbnail {
-        text-align: center;
-    }
-
-    .thumbnail > li {
-        color: white;
-        display: none;
-    }
-
-    .thumbnail > li.acitve {
-        display: block;
-    }
+    
 }
 
 .next-page {
     display: inline-block;
+    cursor: pointer;
 
     img {
         width: 70%;
         max-width: 60px !important;
+    }
+
+    :hover {
+        opacity: 0.85;
     }
 }
 
@@ -325,6 +306,11 @@ select.select-round {
     transition: all ease 0.2s;
     display: inline-block;
     cursor: pointer;
+
+    i {
+        display: inline-block;
+        margin-left: 15px;
+    }
 
     &:hover {
         text-decoration: none;

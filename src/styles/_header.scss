@@ -1,16 +1,20 @@
 ﻿header {
     position: relative;
     z-index: 99;
+
     img {
         max-width: 100%;
     }
+
     .container {
         padding: 0;
     }
+
     .header-top {
         min-height: 65px;
         background-color: #fff;
         padding-top: 10px;
+
         .left-top {
             float: left;
             color: #000;
@@ -20,11 +24,14 @@
             font-size: 15px;
             padding-top: 12px;
         }
+
         .right-top {
             float: right;
+
             .search {
                 float: left;
                 position: relative;
+
                 input {
                     border: 1px solid #aaa;
                     outline: none;
@@ -34,6 +41,7 @@
                     padding: 15px;
                     padding-right: 30px;
                 }
+
                 a {
                     position: absolute;
                     top: 5px;
@@ -42,34 +50,65 @@
                     color: #969696;
                 }
             }
+
             .navbar-nav {
                 float: right;
                 padding-top: 12px;
-                >li>a {
+
+                .m-l-2 {
+                    margin-left: 20px;
+                }
+
+                > li > a {
                     color: #000;
                     font-family: 'Montserrat', sans-serif;
                     font-weight: 700;
                 }
+
+                .login-name {
+                    color: #000;
+
+                    sup {
+                        display: inline-block;
+                        background-color: #DF1722;
+                        color: #fff;
+                        width: 15px;
+                        height: 15px;
+                        text-align: center;
+                        border-radius: 50%;
+                        top: -10px;
+                        line-height: 15px;
+                    }
+                }
+
+                .fa-shopping-cart {
+                    color: #000;
+                }
             }
         }
     }
+
     ul {
         list-style: none;
     }
+
     .nav-menu {
         height: 100px;
         background-color: #000;
         text-align: center;
+
         .nav {
-            >li {
+            > li {
                 display: inline-block;
                 padding: 0 5px;
                 height: 100px;
                 padding-top: 30px;
                 cursor: pointer;
+
                 &.nav-logo {
                     border-bottom: none;
                 }
+
                 &.dropdown-sub {
                     .dropdown-menu {
                         text-align: left;
@@ -91,23 +130,27 @@
                         transition: all .3s;
                     }
                 }
+
                 &:hover {
-                    >a {
+                    > a {
                         border-bottom: 2px solid #007D2C;
                     }
                 }
             }
+
             .sub-menu {
                 .dropdown-menu {
                     padding: 30px 15px 15px;
                     width: 100%;
                     visibility: hidden;
                     box-shadow: 0px 0px 5px #999;
+
                     li {
                         float: left;
                         padding: 0 15px;
                     }
                 }
+
                 &:hover {
                     .dropdown-menu {
                         visibility: visible;
@@ -115,9 +158,11 @@
                     }
                 }
             }
+
             .caret {
                 color: #fff;
             }
+
             .nav-link {
                 color: #fff;
                 font-size: 15px;
@@ -135,8 +180,10 @@
 .sub-menu-reng {
     padding: 0;
     margin: 0;
+
     li {
         width: 25%;
+
         h3 {
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
@@ -145,6 +192,7 @@
             color: #000;
             margin-bottom: 45px;
         }
+
         a {
             display: block;
             color: #656565;
@@ -153,8 +201,10 @@
             text-decoration: none !important;
             margin-bottom: 10px;
             position: relative;
+
             &:hover {
                 color: #007D2C;
+
                 &::before {
                     content: "";
                     position: absolute;
@@ -178,6 +228,7 @@
     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.26);
     padding: 25px;
     margin-top: 40px;
+
     &:after,
     &:before {
         bottom: 100%;
@@ -189,59 +240,73 @@
         position: absolute;
         pointer-events: none;
     }
+
     &:after {
         border-color: rgba(136, 183, 213, 0);
         border-bottom-color: #fff;
         border-width: 15px;
         margin-left: -6px;
     }
+
     &:before {
         border-color: rgba(209, 213, 219, 0);
         border-bottom-color: #D1D5DB;
         border-width: 16px;
         margin-left: -7px;
     }
+
     .cart {
         padding: 0;
         margin-bottom: 40px;
+
         li {
             display: table;
             width: 100%;
-            >div {
+
+            > div {
                 display: table-cell;
                 vertical-align: top;
+
                 &.image {
                     width: 60px;
                 }
+
                 &.text {
                     padding: 0 15px;
                     font-size: 12px;
                     color: #666666;
+
                     h4 {
                         margin: 0 0 5px 0;
                         font-family: 'Montserrat', sans-serif;
                         font-weight: 500;
                         font-size: 12px;
                     }
+
                     p {
                         font-family: 'arial', sans-serif;
                     }
                 }
+
                 &.price {
                     width: 100px;
+
                     .qty {
                         width: 25px;
                         border: none;
                     }
+
                     .price-num {
                         font-family: 'Montserrat', sans-serif;
                         font-weight: 700;
                         font-size: 18px;
                         color: #007D2C;
+
                         sub {
                             font-size: 10px;
                         }
                     }
+
                     .remove {
                         display: inline-block;
                         margin-left: 10px;
@@ -250,15 +315,18 @@
                     }
                 }
             }
+
             &.total-price {
                 text-align: right;
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 700;
                 font-size: 18px;
+
                 sub {
                     font-size: 10px;
                     font-weight: 500;
                 }
+
                 .price-num {
                     display: inline-block;
                     margin-left: 20px;
