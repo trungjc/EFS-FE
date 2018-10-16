@@ -1,8 +1,4 @@
 ﻿.banner-section {
-    min-height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     margin-top: -25px;
     position: relative;
     z-index: 1;
@@ -325,6 +321,11 @@
     padding-top: 20px;
     padding-bottom: 40px;
 
+    .content {
+        position: relative;
+        z-index: 2;
+    }
+
     &::before {
         content: "";
         position: absolute;
@@ -333,14 +334,27 @@
         top: 0;
         left: 0;
         pointer-events: none;
-        background-image: url('../../assets/images//banner_product.png');
+        background-image: url('../../assets/images/banner_product.png');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        z-index: 1;
     }
 
     img {
         margin-bottom: 40px;
+    }
+
+    .txt-des {
+        font-size: 16px;
+        color: #fff;
+        max-width: 755px;
+        margin: 0 auto;
+    }
+
+    .lg-size {
+        font-size: 18px;
+        margin: 15px 0 50px 0;
     }
 }
 

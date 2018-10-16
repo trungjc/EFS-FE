@@ -2890,7 +2890,9 @@ header {
     margin-bottom: 40px; }
     .drop-cart .cart li {
       display: table;
-      width: 100%; }
+      width: 100%;
+      padding: 15px 0;
+      border-bottom: 2px solid #f1f2f4; }
       .drop-cart .cart li > div {
         display: table-cell;
         vertical-align: top; }
@@ -2911,7 +2913,10 @@ header {
           width: 100px; }
           .drop-cart .cart li > div.price .qty {
             width: 25px;
-            border: none; }
+            border: none;
+            font-size: 18px;
+            font-weight: 700;
+            color: #2D3A4B; }
           .drop-cart .cart li > div.price .price-num {
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
@@ -2953,15 +2958,214 @@ header {
   border: 1px solid #D1D5DB;
   border-radius: 5px;
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.26);
-  padding: 25px;
-  margin: 10px; }
+  padding: 15px;
+  margin: 27px 10px; }
+  .tt-menu .tt-suggestion {
+    font-size: 12px;
+    font-weight: 700;
+    color: #007D2C;
+    margin-bottom: 5px;
+    text-decoration: underline; }
+  .tt-menu:after, .tt-menu:before {
+    bottom: 100%;
+    right: 45px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none; }
+  .tt-menu:after {
+    border-color: rgba(136, 183, 213, 0);
+    border-bottom-color: #fff;
+    border-width: 15px;
+    margin-left: -6px; }
+  .tt-menu:before {
+    border-color: rgba(209, 213, 219, 0);
+    border-bottom-color: #D1D5DB;
+    border-width: 16px;
+    margin-left: -7px; }
+
+footer {
+  background-color: #fff; }
+  footer hr {
+    border-top: 3px solid rgba(102, 102, 102, 0.2); }
+  footer .f_top {
+    background-color: #000;
+    min-height: 80px;
+    color: #fff; }
+    footer .f_top .ft-title {
+      float: left;
+      font-size: 25px;
+      font-weight: 700;
+      color: #fff;
+      margin-top: 28px; }
+      @media screen and (max-width: 1281px) {
+        footer .f_top .ft-title {
+          float: none; } }
+    footer .f_top .email-group {
+      float: right; }
+      @media screen and (max-width: 1281px) {
+        footer .f_top .email-group {
+          float: left; } }
+      footer .f_top .email-group > div {
+        float: left; }
+        footer .f_top .email-group > div.subcrible {
+          width: 295px;
+          margin: 0 35px 0 15px; }
+          @media screen and (max-width: 1281px) {
+            footer .f_top .email-group > div.subcrible {
+              margin-left: 40px;
+              margin-right: 120px; } }
+          footer .f_top .email-group > div.subcrible h4 {
+            font-size: 12px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 5px; }
+          footer .f_top .email-group > div.subcrible p {
+            font-size: 12px; }
+        footer .f_top .email-group > div.email {
+          width: 255px;
+          position: relative;
+          margin-top: 20px; }
+          footer .f_top .email-group > div.email input {
+            width: 100%;
+            border-radius: 30px;
+            outline: 0;
+            background-color: #F0F0F0;
+            height: 40px;
+            font-family: "Lato", "Montserrat", sans-serif;
+            color: #38344D;
+            box-shadow: none;
+            border: 1px solid #f0f0f0;
+            padding: 0 30px 0 20px; }
+          footer .f_top .email-group > div.email i {
+            position: absolute;
+            top: 10px;
+            right: 12px;
+            font-size: 18px;
+            color: #C2C1C7; }
+          @media screen and (max-width: 1281px) {
+            footer .f_top .email-group > div.email {
+              width: 352px; } }
+        footer .f_top .email-group > div.logo {
+          max-width: 90px;
+          padding-top: 20px; }
+  footer .content-footer {
+    padding-top: 40px;
+    color: #666666; }
+    footer .content-footer > div {
+      padding-top: 10px; }
+      footer .content-footer > div h4 {
+        font-size: 12px;
+        color: #666666; }
+        footer .content-footer > div h4 img {
+          margin-right: 7px; }
+      footer .content-footer > div .f-list {
+        padding: 5px 0 0 0;
+        margin: 0;
+        list-style: none; }
+        footer .content-footer > div .f-list li {
+          font-size: 12px;
+          margin-bottom: 5px; }
+      footer .content-footer > div .f-list-border {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        padding-top: 10px; }
+        footer .content-footer > div .f-list-border li {
+          border-top: 2px solid rgba(102, 102, 102, 0.2);
+          font-size: 12px;
+          padding-bottom: 10px; }
+          footer .content-footer > div .f-list-border li h5 {
+            font-size: 12px;
+            font-weight: 700; }
+          footer .content-footer > div .f-list-border li a {
+            color: #E01722;
+            text-decoration: underline;
+            cursor: pointer; }
+            footer .content-footer > div .f-list-border li a:hover {
+              font-style: italic;
+              opacity: 0.75; }
+          footer .content-footer > div .f-list-border li span {
+            float: right;
+            font-size: 9px; }
+          footer .content-footer > div .f-list-border li:last-child {
+            border-bottom: 2px solid rgba(102, 102, 102, 0.2); }
+      footer .content-footer > div:first-child {
+        padding-top: 0; }
+        footer .content-footer > div:first-child p {
+          font-size: 12px;
+          margin-bottom: 20px; }
+      footer .content-footer > div.find-dealer .postcode-input {
+        width: 100%;
+        height: 40px;
+        background-color: #F0F0F0;
+        color: rgba(56, 52, 77, 0.5);
+        padding: 20px;
+        outline: 0;
+        border: 1px solid #f0f0f0;
+        border-radius: 30px;
+        transition: all ease 0.15s;
+        margin-bottom: 10px; }
+        footer .content-footer > div.find-dealer .postcode-input:focus {
+          border-color: #000; }
+      footer .content-footer > div.find-dealer p {
+        font-size: 12px;
+        color: #666666;
+        margin-bottom: 2px; }
+      footer .content-footer > div.find-dealer .img-card {
+        padding-top: 30px; }
+  footer .f_bottom {
+    padding: 20px 0; }
+    footer .f_bottom .back-link {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      float: left; }
+      footer .f_bottom .back-link li {
+        display: inline-block;
+        padding: 0 10px; }
+        footer .f_bottom .back-link li img {
+          max-width: 90px; }
+        footer .f_bottom .back-link li a {
+          font-size: 12px;
+          color: #666666;
+          cursor: pointer;
+          text-decoration: none; }
+          footer .f_bottom .back-link li a:hover {
+            color: #E01722; }
+    footer .f_bottom .social {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      float: right; }
+      footer .f_bottom .social li {
+        display: inline-block;
+        margin: 0 5px; }
+        footer .f_bottom .social li a {
+          padding-top: 7px;
+          display: block;
+          width: 40px;
+          height: 40px;
+          color: #666666;
+          font-size: 20px;
+          border-radius: 50%;
+          background-color: rgba(204, 204, 204, 0.4);
+          text-align: center;
+          transition: all ease 0.2s; }
+          footer .f_bottom .social li a.fb-i:hover {
+            background-color: #3b579d;
+            color: #fff; }
+          footer .f_bottom .social li a.tw-i:hover {
+            background-color: #28aae1;
+            color: #fff; }
+          footer .f_bottom .social li a.in-i:hover {
+            background-color: #fc345e;
+            color: #fff; }
 
 /*include page component*/
 .banner-section {
-  min-height: 100vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   margin-top: -25px;
   position: relative;
   z-index: 1;
@@ -3197,6 +3401,9 @@ header {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 40px; }
+  .introduce-section .content {
+    position: relative;
+    z-index: 2; }
   .introduce-section::before {
     content: "";
     position: absolute;
@@ -3208,9 +3415,18 @@ header {
     background-image: url("../../assets/images/banner_product.png");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    z-index: 1; }
   .introduce-section img {
     margin-bottom: 40px; }
+  .introduce-section .txt-des {
+    font-size: 16px;
+    color: #fff;
+    max-width: 755px;
+    margin: 0 auto; }
+  .introduce-section .lg-size {
+    font-size: 18px;
+    margin: 15px 0 50px 0; }
 
 .watch-section {
   min-height: 100vh;

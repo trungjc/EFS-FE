@@ -234,7 +234,11 @@ $xxs-width: 481px;
         @content;
     }
 }
-
+@mixin sm-desktop {
+    @media screen and (max-width: 1281px) {
+        @content;
+    }
+}
 @mixin print {
     @media print {
         @content;
