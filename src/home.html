@@ -14,7 +14,11 @@
     <script src="assets/vendor/slick/js/jquery.cloud9carousel.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/vendor/slick/js/slick.js"></script>
+    <script src="scripts/velocity.min.js"></script>
+    <script src="scripts/velocity.ui.min.js"></script>
+    <script src="scripts/bootstrap-effec.js"></script>
 
+    <script src="scripts/typeahead.jquery.js"></script>
 </head>
 <body>
     <header class="main-header">
@@ -27,7 +31,7 @@
                     <div class="right-top">
                         <div class="search">
                             <form class="search">
-                                <input type="search" placeholder="Search your vehicle" />
+                                <input type="search" placeholder="Search your vehicle" class="typeahead"/>
                                 <a><i class="fa fa-arrow-circle-right"></i></a>
                             </form>
                         </div>
@@ -398,13 +402,13 @@
                 </div>
             </div>
             <div class="constant-item">
-                <div class="clearfix">
+                <div class="row">
                     <div class="col-xs-6">
                         <img src="assets/images/constant_p1.png" />
                     </div>
                     <div class="col-xs-6">
                         <img src="assets/images/constant_p2.png" />
-                        <ul>
+                        <ul class="green-list">
                             <li>13,000lbs / 5,900kg rated single line pull</li>
                             <li>6.0HP 12volt series wound balanced electric motor waterproof motor/gearbox</li>
                             <li>3 stage zinc plated hardened planetary gears </li>
@@ -993,9 +997,6 @@
         </div>
     </div>
 
-    <script src="scripts/velocity.min.js"></script>
-    <script src="scripts/velocity.ui.min.js"></script>
-    <script src="scripts/bootstrap-effec.js"></script>
     <script>
         $(function () {
             //slick
@@ -1043,11 +1044,64 @@
             $('.play-vid').on('click', function () {
                 let vidSrc = $(this).attr('data-video')
                 $('#videoBody').html('<iframe width="560" height="315" src="' + vidSrc + '" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>')
-                $('#modalVideo').modal('show')                
+                $('#modalVideo').modal('show')
                 $('#modalVideo').on('hide.bs.modal', function () {
                     $('#videoBody').html('')
                 })
             })
+            //scroll
+
+            //smooth scroll to top
+            $('.next-page').on('click', function (event) {
+                //caculator next section
+                let offsetTop = $(this).parents('section').next().offset().top,
+                    scroll_top_duration = 700;
+                event.preventDefault();
+                $('body,html').animate({
+                    scrollTop: offsetTop,
+                }, scroll_top_duration
+                );
+            });
+            //autocomplete
+            var substringMatcher = function (strs) {
+                return function findMatches(q, cb) {
+                    var matches, substringRegex;
+
+                    // an array that will be populated with substring matches
+                    matches = [];
+
+                    // regex used to determine if a string contains the substring `q`
+                    substrRegex = new RegExp(q, 'i');
+
+                    // iterate through the pool of strings and for any string that
+                    // contains the substring `q`, add it to the `matches` array
+                    $.each(strs, function (i, str) {
+                        if (substrRegex.test(str)) {
+                            matches.push(str);
+                        }
+                    });
+                    cb(matches);
+                };
+            };
+            var states = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California',
+                          'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii',
+                          'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana',
+                          'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota',
+                          'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire',
+                          'New Jersey', 'New Mexico', 'New York', 'North Carolina', 'North Dakota',
+                          'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island',
+                          'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont',
+                          'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'
+            ];
+            $('.typeahead').typeahead({
+                hint: true,
+                highlight: true,
+                minLength: 1
+            },
+            {
+                name: 'states',
+                source: substringMatcher(states)
+            });
         })
 
     </script>
