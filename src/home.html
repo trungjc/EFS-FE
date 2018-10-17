@@ -26,10 +26,11 @@
             <div class="container">
                 <div class="d-flex justify-content-end">
                     <div class="left-top">
-                        call your nearest efs dealer now 1300 337 493
+                        <img src="assets/images/logo.png" class="mb-logo">
+                        <i class="fas fa-phone"></i><span>call your nearest efs dealer now</span> 1300 337 493
                     </div>
                     <div class="right-top">
-                        <div class="search">
+                        <div class="search" id="search_group">
                             <form class="search">
                                 <input type="search" placeholder="Search your vehicle" class="typeahead" />
                                 <a><i class="fa fa-arrow-circle-right"></i></a>
@@ -86,23 +87,71 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="resmenu-container">
+                        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#mobile_menu">
+                            <span class="sr-only">Categories</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="search-mb" id="btn_Search_mb" data-toggle="collapse" data-target="#search_group"><i class="fas fa-search"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="nav-menu">
             <div class="container ">
-                <div class="resmenu-container">
-                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#ResMenuprimary_menu">
-                        <span class="sr-only">Categories</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-
-                <ul class="nav">
+                <ul class="nav" id="mobile_menu">
                     <li class="nav-logo">
                         <img src="assets/images/logo.png">
+                    </li>
+                    <li class="nav-item shopping-cart">
+                        <a class="nav-link" routerLink="/page/home/index">MY ACCOUNT</a>
+                        <div class="user-avatar dropdown">
+                            <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                                 aria-haspopup="true" aria-expanded="false">
+                                <a href="#" class="login-name">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    <sup>3</sup>
+                                </a>
+                            </div>
+                            <div class="dropdown-menu drop-cart" aria-labelledby="dropdownMenuButton">
+                                <ul class="cart">
+                                    <li>
+                                        <div class="image">
+                                            <img src="assets/images/cart_item.png">
+                                        </div>
+                                        <div class="text">
+                                            <h4>300mm Bore sock</h4>
+                                            <p>lorem ipsum dolor</p>
+                                        </div>
+                                        <div class="price">
+                                            <input type="number" class="qty" value="2">
+                                            <span class="price-num"><sub> $ </sub> 39</span>
+                                            <span class="remove">x</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="image">
+                                            <img src="assets/images/cart_item.png">
+                                        </div>
+                                        <div class="text">
+                                            <h4>300mm Bore sock</h4>
+                                            <p>lorem ipsum dolor</p>
+                                        </div>
+                                        <div class="price">
+                                            <input type="number" value="1" class="qty">
+                                            <span class="price-num"><sub> $ </sub> 39</span>
+                                            <span class="remove">x</span>
+                                        </div>
+                                    </li>
+                                    <li class="total-price">
+                                        <span>TOTAL COST</span><span class="price-num"><sub> $ </sub> 39</span>
+                                    </li>
+                                </ul>
+                                <a class="btn-green" href="#">VIEW CART & CHECKOUT</a>
+                            </div>
+                        </div>
                     </li>
                     <li class="nav-item current-item">
                         <a class="nav-link" routerLink="/page/home/index">Home</a>
@@ -193,7 +242,7 @@
         </div>
     </header>
     <section class="banner-section">
-        <img src="assets/images/banner_1920.png" />
+        <img src="assets/images/banner_1920.png" class="img-banner" />
         <div class="content">
             <img class="txt-banner" src="assets/images/text_banner_1.png" />
             <p>
@@ -212,7 +261,7 @@
         <h3>VIEW THE WIDE RANGE <span> OF COMPATIBLE </span></h3>
         <h2>ACCESSORIES FOR YOUR VEHICLE</h2>
         <div class="container-fluid">
-            <ol id="carousel" style="height: 500px">
+            <ol id="carousel" style="height: 455px">
                 <li>
                     <img class="txt-banner cloud9-item" src="assets/images/car1.png" />
                     <div class="product-info">
@@ -378,10 +427,10 @@
         <div class="slider constant-slider">
             <div class="constant-item">
                 <div class="row">
-                    <div class="col-xs-6">
+                    <div class="col-xs-12 col-sm-6">
                         <img src="assets/images/constant_p1.png" />
                     </div>
-                    <div class="col-xs-6">
+                    <div class="col-xs-12 col-sm-6">
                         <img src="assets/images/constant_p2.png" />
                         <ul class="green-list">
                             <li>13,000lbs / 5,900kg rated single line pull</li>
@@ -403,10 +452,10 @@
             </div>
             <div class="constant-item">
                 <div class="row">
-                    <div class="col-xs-6">
+                    <div class="col-xs-12 col-sm-6">
                         <img src="assets/images/constant_p1.png" />
                     </div>
-                    <div class="col-xs-6">
+                    <div class="col-xs-12 col-sm-6">
                         <img src="assets/images/constant_p2.png" />
                         <ul class="green-list">
                             <li>13,000lbs / 5,900kg rated single line pull</li>
@@ -571,8 +620,22 @@
             <h2 class="medium-title">
                 MOTORSPORT DIVISION
             </h2>
-            <div>
-                <img src="assets/images/division_img.png" />
+            <img src="assets/images/division_img.png" class="show-img" />
+            <div class="division-img">
+                <div class="img-f">
+                    <img src="assets/images/division_2.png" class="i-avatar" />
+                </div>
+                <div class="img-f-logo">
+                    <img src="assets/images/f_logo_large.png" />
+                    <h3 class="lg-text">
+                        SUPERUTE DRIVER<br />
+                        <span>RYAL HARRIS</span>
+                    </h3>
+                </div>
+                <div class="img-s">
+                    <img src="assets/images/division_3.png" />
+                    <img src="assets/images/division_1.png" />
+                </div>
             </div>
             <p class="txt-des">100% podium rate since EFS 4x4 Accessories came on board! It’s been a great season so far,<br /> would love to get that 4th championship for EFS Suspension.</p>
             <h3 class="strong-title lg-size">RYAL HARRIS   <span> EFS SUPERUTE DRIVER </span></h3>
@@ -999,13 +1062,13 @@
                 <div class="email-group clearfix">
                     <div class="logo">
                         <img src="assets/images/f_logo_large.png" />
-                    </div>                    
+                    </div>
                     <div class="subcrible">
                         <h4>SUBSCRIBE</h4>
                         <p>Sign up to get the latest and greatest EFS 4X4 Accessories News & Offers. Login or sign up now! </p>
                     </div>
                     <div class="email">
-                        <input placeholder="Email"/>
+                        <input placeholder="Email" />
                         <i class="far fa-envelope"></i>
                     </div>
                 </div>
@@ -1115,6 +1178,13 @@
 
     <script>
         $(function () {
+            //check mobile
+            let winWidth = window.outerWidth
+            if (winWidth < 1024) {
+                //add class menu
+                $('#mobile_menu').addClass('collapse');
+                $('#search_group').addClass('collapse');
+            }
             //slick
             $('.constant-slider').slick({
                 infinite: true,

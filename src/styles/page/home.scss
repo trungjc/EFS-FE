@@ -4,11 +4,35 @@
     z-index: 1;
     color: #fff;
 
+    @include device() {
+        background-image: url('../../assets/images/banner_1920.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: 0;
+        padding-bottom: 50px;
+    }
+
+    .img-banner {
+        width: 100%;
+
+        @include device() {
+            display: none;
+        }
+    }
+
     .content {
-        position: absolute;
-        top: 55%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        @include desktop() {
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        @include device() {
+            padding: 0 30px;
+        }
+
         text-align: center;
 
         .txt-banner {
@@ -35,7 +59,7 @@
     position: relative;
     z-index: 1;
     text-align: center;
-    padding: 30px 0;
+    padding: 80px 0 30px 0;
 
     h3 {
         color: #fff;
@@ -46,6 +70,10 @@
         span {
             color: #DF1722;
         }
+
+        @include device() {
+            font-size: 10px;
+        }
     }
 
     h2 {
@@ -55,6 +83,10 @@
         font-weight: 700;
         margin: 0;
         margin-bottom: 40px;
+
+        @include device() {
+            font-size: 24px;
+        }
     }
 
     .multiple-items {
@@ -89,7 +121,7 @@
         list-style: none;
         font-size: 0;
         text-align: center;
-        margin: 20px 0 40px 0;
+        margin: 35px 0 60px 0;
 
         li {
             display: inline-block;
@@ -97,7 +129,7 @@
             height: 65px;
             background-color: #fff;
             border-radius: 50%;
-            margin: 0 10px;
+            margin: 0 10px 10px 10px;
 
             a {
                 cursor: pointer;
@@ -121,7 +153,7 @@
     position: relative;
     z-index: 1;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 60px;
     padding-bottom: 30px;
 
     &::before {
@@ -147,6 +179,10 @@
         span {
             color: #DF1722;
         }
+
+        @include device() {
+            font-size: 10px;
+        }
     }
 
     h2 {
@@ -155,7 +191,11 @@
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
         margin: 0;
-        margin-bottom: 40px;
+        margin-bottom: 95px;
+
+        @include device() {
+            font-size: 24px;
+        }
     }
 
     .constant-slider {
@@ -178,7 +218,7 @@
     position: relative;
     z-index: 1;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 60px;
     padding-bottom: 30px;
 
     &::before {
@@ -212,14 +252,18 @@
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
         margin: 0;
-        margin-bottom: 40px;
+        margin-bottom: 55px;
     }
 
     .list {
-        margin-bottom: 30px;
+        margin-bottom: 60px;
 
         > div {
             padding: 0 7px;
+
+            @include device() {
+                padding: 0 15px;
+            }
         }
     }
 
@@ -311,7 +355,6 @@
 .introduce-section {
     min-height: 100vh;
     background-color: #000;
-    background-image: url('../../assets/images//introduce_bn_2.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -321,13 +364,20 @@
     padding-top: 20px;
     padding-bottom: 40px;
 
+    @include desktop() {
+        background-image: url('../../assets/images//introduce_bn_2.png');
+    }
+
     .content {
         position: relative;
         z-index: 2;
     }
 
     &::before {
-        content: "";
+        @include desktop() {
+            content: "";
+        }
+
         position: absolute;
         width: 100%;
         height: 100%;
@@ -343,6 +393,14 @@
 
     img {
         margin-bottom: 40px;
+
+        &.show-img {
+            margin-top: -80px;
+
+            @include device() {
+                display: none;
+            }
+        }
     }
 
     .txt-des {
@@ -350,11 +408,56 @@
         color: #fff;
         max-width: 755px;
         margin: 0 auto;
+
+        @include device() {
+            padding: 0 30px;
+        }
     }
 
     .lg-size {
         font-size: 18px;
         margin: 15px 0 50px 0;
+
+        @include device() {
+            font-size: 14px;
+        }
+    }
+
+    .division-img {
+        @include desktop() {
+            display: none;
+        }
+
+        .img-f {
+            padding: 0;
+            background-image: url('../../assets/images/dvision_4_banner.png');
+
+            .i-avatar {
+                max-width: 195px;
+            }
+        }
+
+        .img-f-logo {
+            img {
+                display: inline-block;
+                margin-right: 17px;
+            }
+
+            .lg-text {
+                font-weight: 700;
+                font-size: 20px;
+                display: inline-block;
+                color: #fff;
+
+                span {
+                    font-size: 29px;
+                }
+            }
+        }
+
+        .img-s {
+            padding: 30px;
+        }
     }
 }
 
@@ -368,7 +471,7 @@
     position: relative;
     z-index: 1;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 60px;
     padding-bottom: 30px;
 
     h3 {
@@ -394,12 +497,21 @@
     .list-vid {
         display: table;
         width: 100%;
-        margin-bottom: 70px;
+        margin-bottom: 115px;
+
+        @include device() {
+            padding: 0 30px;
+        }
 
         > div {
             display: table-cell;
             width: 50%;
             vertical-align: top;
+
+            @include device() {
+                display: block;
+                width: 100%;
+            }
 
             &.vid-show {
                 background-image: url('../../assets/images//vid_thumb.png');
@@ -409,6 +521,10 @@
                 text-align: left;
                 color: #fff;
                 padding: 30px;
+
+                @include device() {
+                    padding: 15px;
+                }
 
                 h5 {
                     font-size: 11px;
@@ -432,6 +548,10 @@
             &.vid-list {
                 padding-left: 30px;
 
+                @include device() {
+                    padding-left: 0;
+                }
+
                 ul {
                     padding: 0;
                     margin: 0;
@@ -453,6 +573,10 @@
                                 &.thumb {
                                     width: 120px;
                                     position: relative;
+
+                                    @include device() {
+                                        display: none;
+                                    }
 
                                     .see-more {
                                         position: absolute;
@@ -562,6 +686,11 @@
         text-align: left;
         margin-bottom: 15px;
 
+        @include device() {
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
         .header {
             font-size: 12px;
 
@@ -628,22 +757,31 @@
 
     .news {
         position: relative;
-        cursor: pointer;
-        transform-style: preserve-3d;
-        transition: all 0.5s linear;
-        min-height: 350px;
         margin-bottom: 14px;
 
+        @include desktop() {
+            cursor: pointer;
+            transform-style: preserve-3d;
+            transition: all 0.5s linear;
+            min-height: 350px;
+        }
+
         .face-box {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
+            @include desktop() {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+            }
 
             &.back {
                 display: block;
                 transform: rotateY(180deg);
                 box-sizing: border-box;
+
+                @include device() {
+                    display: none;
+                }
             }
         }
 
@@ -708,10 +846,16 @@
         color: #fff;
 
         .content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            @include desktop() {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        @include device() {
+            padding-top: 60px;
         }
 
         p {
@@ -731,6 +875,10 @@
             position: relative;
             max-width: 320px;
             margin: 0 auto;
+
+            @include device() {
+                max-width: 100%;
+            }
 
             input {
                 width: 100%;

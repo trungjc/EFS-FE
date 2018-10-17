@@ -27,6 +27,10 @@ h3.strong-title {
     span {
         color: #DF1722;
     }
+
+    @include device() {
+        font-size: 10px;
+    }
 }
 
 h2.medium-title {
@@ -36,6 +40,10 @@ h2.medium-title {
     font-weight: 700;
     margin: 0;
     margin-bottom: 40px;
+
+    @include device() {
+        font-size: 24px;
+    }
 }
 
 .btn-green {
@@ -62,7 +70,7 @@ h2.medium-title {
     border: 1px solid #fff;
     border-radius: 35px;
     padding: 14px 24px;
-    margin-bottom: 25px;
+    margin-bottom: 55px;
     cursor: pointer;
     transition: all ease 0.2s;
 
@@ -176,7 +184,6 @@ h2.medium-title {
 }
 
 .slide-3d {
-    
 }
 
 .next-page {
@@ -257,6 +264,10 @@ select.select-round {
     text-align: center;
     outline: 0;
 
+    @include device() {
+        top: 10%;
+    }
+
     &:after {
         -moz-osx-font-smoothing: grayscale;
         -webkit-font-smoothing: antialiased;
@@ -317,5 +328,11 @@ select.select-round {
         background-color: #fff;
         color: #DF1722;
         border: 1px solid #DF1722;
+    }
+}
+
+.row {
+    @include device() {
+        margin: 0;
     }
 }
