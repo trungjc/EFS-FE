@@ -51,7 +51,6 @@
 }
 
 .product-section {
-    min-height: 100vh;
     background-color: #000;
     background-image: url('../../assets/images/banner_product.png');
     background-attachment: fixed;
@@ -146,7 +145,6 @@
 }
 
 .constant-section {
-    min-height: 100vh;
     background-color: #000;
     background-image: url('../../assets/images/constant_bg.png');
     background-attachment: fixed;
@@ -213,7 +211,6 @@
 }
 
 .explore-section {
-    min-height: 100vh;
     background-color: #000;
     background-image: url('../../assets/images/constant_bg.png');
     background-attachment: fixed;
@@ -359,7 +356,6 @@
 }
 
 .introduce-section {
-    min-height: 100vh;
     background-color: #000;
     background-size: cover;
     background-position: center;
@@ -367,7 +363,7 @@
     position: relative;
     z-index: 1;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 60px;
     padding-bottom: 40px;
 
     @include desktop() {
@@ -471,7 +467,6 @@
 }
 
 .watch-section {
-    min-height: 100vh;
     background-color: #000;
     background-image: url('../../assets/images/watch_banner.png');
     background-attachment: fixed;
@@ -525,7 +520,6 @@
 
             &.vid-show {
                 background-image: url('../../assets/images/vid_thumb.png');
-                background-attachment: fixed;
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -647,7 +641,6 @@
 }
 
 .news-section {
-    min-height: 100vh;
     background-color: #000;
     background-image: url('../../assets/images/news_banner.png');
     background-attachment: fixed;
@@ -657,7 +650,7 @@
     position: relative;
     z-index: 1;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 60px;
     padding-bottom: 30px;
 
     h3 {
