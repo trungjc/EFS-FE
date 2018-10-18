@@ -105,7 +105,7 @@
                     <li class="nav-logo">
                         <img src="assets/images/logo.png">
                     </li>
-                    <li class="nav-item shopping-cart">
+                    <li class="nav-item shopping-cart shop-mobile">
                         <a class="nav-link" routerLink="/page/home/index">MY ACCOUNT</a>
                         <div class="user-avatar dropdown">
                             <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
@@ -1177,9 +1177,9 @@
     </div>
 
     <script>
-        $(function () {
+        $(function () {            
             //check mobile
-            let winWidth = window.outerWidth
+            let winWidth = window.innerWidth
             if (winWidth < 1024) {
                 //add class menu
                 $('#mobile_menu').addClass('collapse');
