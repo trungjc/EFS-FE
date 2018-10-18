@@ -9,6 +9,7 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        background-attachment: fixed;
         margin-top: 0;
         padding-bottom: 50px;
     }
@@ -52,7 +53,8 @@
 .product-section {
     min-height: 100vh;
     background-color: #000;
-    background-image: url('../../assets/images//banner_product.png');
+    background-image: url('../../assets/images/banner_product.png');
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -146,7 +148,8 @@
 .constant-section {
     min-height: 100vh;
     background-color: #000;
-    background-image: url('../../assets/images//constant_bg.png');
+    background-image: url('../../assets/images/constant_bg.png');
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -164,7 +167,8 @@
         top: 0;
         left: 0;
         pointer-events: none;
-        background-image: url('../../assets/images//banner_product.png');
+        background-image: url('../../assets/images/banner_product.png');
+        background-attachment: fixed;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -211,7 +215,8 @@
 .explore-section {
     min-height: 100vh;
     background-color: #000;
-    background-image: url('../../assets/images//constant_bg.png');
+    background-image: url('../../assets/images/constant_bg.png');
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -229,7 +234,8 @@
         top: 0;
         left: 0;
         pointer-events: none;
-        background-image: url('../../assets/images//explore_bn.png');
+        background-image: url('../../assets/images/explore_bn.png');
+        background-attachment: fixed;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -365,7 +371,8 @@
     padding-bottom: 40px;
 
     @include desktop() {
-        background-image: url('../../assets/images//introduce_bn_2.png');
+        background-image: url('../../assets/images/introduce_bn_2.png');
+        background-attachment: fixed;
     }
 
     .content {
@@ -385,6 +392,7 @@
         left: 0;
         pointer-events: none;
         background-image: url('../../assets/images/banner_product.png');
+        background-attachment: fixed;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -431,6 +439,7 @@
         .img-f {
             padding: 0;
             background-image: url('../../assets/images/dvision_4_banner.png');
+            background-attachment: fixed;
 
             .i-avatar {
                 max-width: 195px;
@@ -464,7 +473,8 @@
 .watch-section {
     min-height: 100vh;
     background-color: #000;
-    background-image: url('../../assets/images//watch_banner.png');
+    background-image: url('../../assets/images/watch_banner.png');
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -514,7 +524,8 @@
             }
 
             &.vid-show {
-                background-image: url('../../assets/images//vid_thumb.png');
+                background-image: url('../../assets/images/vid_thumb.png');
+                background-attachment: fixed;
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -638,7 +649,8 @@
 .news-section {
     min-height: 100vh;
     background-color: #000;
-    background-image: url('../../assets/images//news_banner.png');
+    background-image: url('../../assets/images/news_banner.png');
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

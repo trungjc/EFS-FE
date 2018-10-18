@@ -3323,6 +3323,7 @@ footer {
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+      background-attachment: fixed;
       margin-top: 0;
       padding-bottom: 50px; } }
   .banner-section .img-banner {
@@ -3354,6 +3355,7 @@ footer {
   min-height: 100vh;
   background-color: #000;
   background-image: url("../../assets/images/banner_product.png");
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -3421,6 +3423,7 @@ footer {
   min-height: 100vh;
   background-color: #000;
   background-image: url("../../assets/images/constant_bg.png");
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -3438,6 +3441,7 @@ footer {
     left: 0;
     pointer-events: none;
     background-image: url("../../assets/images/banner_product.png");
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; }
@@ -3471,6 +3475,7 @@ footer {
   min-height: 100vh;
   background-color: #000;
   background-image: url("../../assets/images/constant_bg.png");
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -3488,6 +3493,7 @@ footer {
     left: 0;
     pointer-events: none;
     background-image: url("../../assets/images/explore_bn.png");
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; }
@@ -3582,7 +3588,8 @@ footer {
   padding-bottom: 40px; }
   @media screen and (min-width: 1025px) {
     .introduce-section {
-      background-image: url("../../assets/images/introduce_bn_2.png"); } }
+      background-image: url("../../assets/images/introduce_bn_2.png");
+      background-attachment: fixed; } }
   .introduce-section .content {
     position: relative;
     z-index: 2; }
@@ -3594,6 +3601,7 @@ footer {
     left: 0;
     pointer-events: none;
     background-image: url("../../assets/images/banner_product.png");
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -3627,7 +3635,8 @@ footer {
       display: none; } }
   .introduce-section .division-img .img-f {
     padding: 0;
-    background-image: url("../../assets/images/dvision_4_banner.png"); }
+    background-image: url("../../assets/images/dvision_4_banner.png");
+    background-attachment: fixed; }
     .introduce-section .division-img .img-f .i-avatar {
       max-width: 195px; }
   .introduce-section .division-img .img-f-logo img {
@@ -3647,6 +3656,7 @@ footer {
   min-height: 100vh;
   background-color: #000;
   background-image: url("../../assets/images/watch_banner.png");
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -3686,6 +3696,7 @@ footer {
           width: 100%; } }
       .watch-section .list-vid > div.vid-show {
         background-image: url("../../assets/images/vid_thumb.png");
+        background-attachment: fixed;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -3764,6 +3775,7 @@ footer {
   min-height: 100vh;
   background-color: #000;
   background-image: url("../../assets/images/news_banner.png");
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
