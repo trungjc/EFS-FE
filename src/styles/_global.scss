@@ -54,7 +54,7 @@ h2.medium-title {
     display: block;
     text-align: center;
     padding: 10px 0;
-
+    transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
     &:hover {
         text-decoration: none;
         opacity: 0.8;
@@ -72,7 +72,7 @@ h2.medium-title {
     padding: 14px 24px;
     margin-bottom: 55px;
     cursor: pointer;
-    transition: all ease 0.2s;
+    transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
 
     &:hover {
         background-color: #fff;
@@ -175,7 +175,7 @@ h2.medium-title {
     padding: 12px 34px;
     display: inline-block;
     cursor: pointer;
-
+    transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
     &:hover {
         text-decoration: none;
         opacity: 0.85;
@@ -204,6 +204,7 @@ h2.medium-title {
     border-bottom: 0;
 
     > li {
+        transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
         > a {
             font-size: 19px;
             font-weight: 700;
@@ -317,7 +318,7 @@ select.select-round {
     transition: all ease 0.2s;
     display: inline-block;
     cursor: pointer;
-
+    transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
     i {
         display: inline-block;
         margin-left: 15px;

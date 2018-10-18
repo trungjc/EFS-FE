@@ -42,7 +42,8 @@ h2.medium-title {
   border-radius: 30px;
   display: block;
   text-align: center;
-  padding: 10px 0; }
+  padding: 10px 0;
+  transition: all 0.3s cubic-bezier(0.4, 0, 1, 1); }
   .btn-green:hover {
     text-decoration: none;
     opacity: 0.8; }
@@ -58,7 +59,7 @@ h2.medium-title {
   padding: 14px 24px;
   margin-bottom: 55px;
   cursor: pointer;
-  transition: all ease 0.2s; }
+  transition: all 0.3s cubic-bezier(0.4, 0, 1, 1); }
   .see-more:hover {
     background-color: #fff;
     color: #000;
@@ -135,7 +136,8 @@ h2.medium-title {
   border-radius: 30px;
   padding: 12px 34px;
   display: inline-block;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 1, 1); }
   .btn-green-border:hover {
     text-decoration: none;
     opacity: 0.85;
@@ -152,16 +154,18 @@ h2.medium-title {
 
 .nav-tabs-green {
   border-bottom: 0; }
-  .nav-tabs-green > li > a {
-    font-size: 19px;
-    font-weight: 700;
-    color: #fff;
-    border: 0 !important;
-    text-decoration: none !important; }
-  .nav-tabs-green > li.active > a, .nav-tabs-green > li:hover > a {
-    background-color: transparent !important;
-    border-bottom: 2px solid #007D2C !important;
-    color: #fff !important; }
+  .nav-tabs-green > li {
+    transition: all 0.3s cubic-bezier(0.4, 0, 1, 1); }
+    .nav-tabs-green > li > a {
+      font-size: 19px;
+      font-weight: 700;
+      color: #fff;
+      border: 0 !important;
+      text-decoration: none !important; }
+    .nav-tabs-green > li.active > a, .nav-tabs-green > li:hover > a {
+      background-color: transparent !important;
+      border-bottom: 2px solid #007D2C !important;
+      color: #fff !important; }
 
 select.select-round {
   width: 100%;
@@ -237,7 +241,8 @@ select.select-round {
   text-transform: uppercase;
   transition: all ease 0.2s;
   display: inline-block;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 1, 1); }
   .red-btn i {
     display: inline-block;
     margin-left: 15px; }
@@ -3481,19 +3486,6 @@ footer {
   text-align: center;
   padding-top: 60px;
   padding-bottom: 30px; }
-  .explore-section::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    background-image: url("../../assets/images/explore_bn.png");
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; }
   .explore-section h3 {
     color: #fff;
     font-size: 24px;
@@ -3720,50 +3712,53 @@ footer {
           margin: 0;
           list-style: none;
           text-align: left; }
-          .watch-section .list-vid > div.vid-list ul li a {
-            display: table;
-            width: 100%;
-            color: #fff;
-            background-color: rgba(0, 0, 0, 0.67);
-            text-decoration: none; }
-            .watch-section .list-vid > div.vid-list ul li a > div {
-              display: table-cell;
-              vertical-align: top; }
-              .watch-section .list-vid > div.vid-list ul li a > div.thumb {
-                width: 120px;
-                position: relative; }
-                @media screen and (max-width: 1024px) {
-                  .watch-section .list-vid > div.vid-list ul li a > div.thumb {
-                    display: none; } }
-                .watch-section .list-vid > div.vid-list ul li a > div.thumb .see-more {
-                  position: absolute;
-                  top: 50%;
-                  left: 50%;
-                  transform: translate(-50%, -50%);
-                  margin: 0;
-                  padding: 11px 20px; }
-                  .watch-section .list-vid > div.vid-list ul li a > div.thumb .see-more:hover {
-                    background-color: #DF1722;
-                    color: #fff;
-                    border: 1px solid #fff; }
-              .watch-section .list-vid > div.vid-list ul li a > div.text {
-                padding-left: 20px; }
-            .watch-section .list-vid > div.vid-list ul li a h4 {
-              font-family: 'Montserrat', sans-serif;
-              font-weight: 300;
-              font-size: 14px;
-              margin-bottom: 5px; }
-            .watch-section .list-vid > div.vid-list ul li a p {
-              margin-bottom: 0px;
-              font-size: 10px; }
-            .watch-section .list-vid > div.vid-list ul li a span {
-              font-size: 8px; }
-          .watch-section .list-vid > div.vid-list ul li.active a, .watch-section .list-vid > div.vid-list ul li:hover a {
-            background-color: #3E3E3E; }
-          .watch-section .list-vid > div.vid-list ul li.active .see-more, .watch-section .list-vid > div.vid-list ul li:hover .see-more {
-            background-color: #DF1722;
-            color: #fff;
-            border: 1px solid #fff; }
+          .watch-section .list-vid > div.vid-list ul li {
+            transition: all 0.3s cubic-bezier(0.4, 0, 1, 1); }
+            .watch-section .list-vid > div.vid-list ul li a {
+              display: table;
+              width: 100%;
+              color: #fff;
+              background-color: rgba(0, 0, 0, 0.67);
+              text-decoration: none;
+              transition: all 0.3s cubic-bezier(0.4, 0, 1, 1); }
+              .watch-section .list-vid > div.vid-list ul li a > div {
+                display: table-cell;
+                vertical-align: top; }
+                .watch-section .list-vid > div.vid-list ul li a > div.thumb {
+                  width: 120px;
+                  position: relative; }
+                  @media screen and (max-width: 1024px) {
+                    .watch-section .list-vid > div.vid-list ul li a > div.thumb {
+                      display: none; } }
+                  .watch-section .list-vid > div.vid-list ul li a > div.thumb .see-more {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    margin: 0;
+                    padding: 11px 20px; }
+                    .watch-section .list-vid > div.vid-list ul li a > div.thumb .see-more:hover {
+                      background-color: #DF1722;
+                      color: #fff;
+                      border: 1px solid #fff; }
+                .watch-section .list-vid > div.vid-list ul li a > div.text {
+                  padding-left: 20px; }
+              .watch-section .list-vid > div.vid-list ul li a h4 {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 300;
+                font-size: 14px;
+                margin-bottom: 5px; }
+              .watch-section .list-vid > div.vid-list ul li a p {
+                margin-bottom: 0px;
+                font-size: 10px; }
+              .watch-section .list-vid > div.vid-list ul li a span {
+                font-size: 8px; }
+            .watch-section .list-vid > div.vid-list ul li.active a, .watch-section .list-vid > div.vid-list ul li:hover a {
+              background-color: #3E3E3E; }
+            .watch-section .list-vid > div.vid-list ul li.active .see-more, .watch-section .list-vid > div.vid-list ul li:hover .see-more {
+              background-color: #DF1722;
+              color: #fff;
+              border: 1px solid #fff; }
 
 .news-section {
   background-color: #000;
@@ -3843,29 +3838,35 @@ footer {
       overflow: hidden;
       margin-bottom: 20px; }
   .news-section .news {
+    margin-bottom: 14px;
     position: relative;
-    margin-bottom: 14px; }
-    @media screen and (min-width: 1025px) {
-      .news-section .news {
-        cursor: pointer;
-        transform-style: preserve-3d;
-        transition: all 0.5s linear;
-        min-height: 350px; } }
-    @media screen and (min-width: 1025px) {
-      .news-section .news .face-box {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        backface-visibility: hidden; } }
-    .news-section .news .face-box.back {
-      display: block;
-      transform: rotateY(180deg);
-      box-sizing: border-box; }
-      @media screen and (max-width: 1024px) {
-        .news-section .news .face-box.back {
-          display: none; } }
-    .news-section .news:hover {
-      transform: rotateY(180deg); }
+    display: inline-block;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto; }
+    .news-section .news .hvrbox-layer_slidedown {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      -moz-transition: all 0.4s ease-in-out 0s;
+      -webkit-transition: all 0.4s ease-in-out 0s;
+      -ms-transition: all 0.4s ease-in-out 0s;
+      transition: all 0.4s ease-in-out 0s;
+      -moz-transform: translateY(-100%);
+      -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+      transform: translateY(-100%); }
+    .news-section .news:hover .hvrbox-layer_slidedown, .news-section .news.active .hvrbox-layer_slidedown {
+      -moz-transform: translateY(0);
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1; }
 
 #modalVideo .modal-body,
 #modalVideo .modal-content {
@@ -5027,100 +5028,6 @@ footer {
   .nav-tabs > li.active > a, .nav-tabs > li:hover > a {
     background-color: transparent;
     border-bottom: 2px solid #007D2C !important; }
-
-.explore-section {
-  min-height: 100vh;
-  background-color: #000;
-  background-image: url("../../assets/images/constant_bg.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 30px; }
-  .explore-section::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    background-image: url("../../assets/images/explore_bn.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; }
-  .explore-section h3 {
-    color: #fff;
-    font-size: 24px;
-    margin: 0;
-    margin-bottom: 10px; }
-    .explore-section h3 span {
-      color: #DF1722; }
-  .explore-section h2 {
-    color: #fff;
-    font-size: 38px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    margin: 0;
-    margin-bottom: 40px; }
-  .explore-section .list {
-    margin-bottom: 60px; }
-    .explore-section .list > div {
-      padding: 0 7px; }
-      @media screen and (max-width: 1024px) {
-        .explore-section .list > div {
-          padding: 0 15px; } }
-  .explore-section .product-item {
-    background-color: #fff;
-    text-align: left;
-    padding-top: 15px; }
-    .explore-section .product-item h3 {
-      font-size: 20px;
-      color: #666666;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 300; }
-    .explore-section .product-item p {
-      color: #666666; }
-    .explore-section .product-item .img-line {
-      text-align: right;
-      font-size: 0; }
-      .explore-section .product-item .img-line img {
-        max-width: 70%;
-        display: inline-block; }
-    .explore-section .product-item .product-box {
-      background-color: #1B1B1B; }
-      .explore-section .product-item .product-box .img-logo {
-        text-align: right;
-        padding: 15px; }
-        .explore-section .product-item .product-box .img-logo img {
-          max-width: 99px; }
-      .explore-section .product-item .product-box .img-product {
-        text-align: center; }
-        .explore-section .product-item .product-box .img-product img {
-          max-width: 80%;
-          display: inline-block; }
-      .explore-section .product-item .product-box .info {
-        text-align: center;
-        padding: 15px;
-        color: #fff; }
-        .explore-section .product-item .product-box .info .price {
-          font-size: 24px;
-          color: #fff;
-          display: block;
-          float: left; }
-        .explore-section .product-item .product-box .info a {
-          float: right;
-          background-color: #007D2C;
-          color: #fff;
-          text-transform: uppercase;
-          font-family: 'Montserrat', sans-serif;
-          font-weight: 700;
-          font-size: 7px;
-          padding: 6px 14px;
-          border-radius: 15px; }
 
 .our-story .banner {
   min-height: calc(100vh - 165px);

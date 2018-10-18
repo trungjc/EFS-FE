@@ -223,21 +223,6 @@
     padding-top: 60px;
     padding-bottom: 30px;
 
-    &::before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        pointer-events: none;
-        background-image: url('../../assets/images/explore_bn.png');
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
     h3 {
         color: #fff;
         font-size: 24px;
@@ -564,12 +549,15 @@
                     text-align: left;
 
                     li {
+                        transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
+
                         a {
                             display: table;
                             width: 100%;
                             color: #fff;
                             background-color: rgba(0, 0, 0, 0.67);
                             text-decoration: none;
+                            transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
 
                             > div {
                                 display: table-cell;
@@ -761,37 +749,40 @@
     }
 
     .news {
-        position: relative;
         margin-bottom: 14px;
-
-        @include desktop() {
-            cursor: pointer;
-            transform-style: preserve-3d;
-            transition: all 0.5s linear;
-            min-height: 350px;
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        max-width: 100%;
+        height: auto;        
+        .hvrbox-layer_slidedown {
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            -moz-transition: all 0.4s ease-in-out 0s;
+            -webkit-transition: all 0.4s ease-in-out 0s;
+            -ms-transition: all 0.4s ease-in-out 0s;
+            transition: all 0.4s ease-in-out 0s;
+            -moz-transform: translateY(-100%);
+            -webkit-transform: translateY(-100%);
+            -ms-transform: translateY(-100%);
+            transform: translateY(-100%);
         }
 
-        .face-box {
-            @include desktop() {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                backface-visibility: hidden;
+        &:hover,
+        &.active {
+            .hvrbox-layer_slidedown {
+                -moz-transform: translateY(0);
+                -webkit-transform: translateY(0);
+                -ms-transform: translateY(0);
+                transform: translateY(0);
+                opacity:1;
             }
-
-            &.back {
-                display: block;
-                transform: rotateY(180deg);
-                box-sizing: border-box;
-
-                @include device() {
-                    display: none;
-                }
-            }
-        }
-
-        &:hover {
-            transform: rotateY(180deg);
         }
     }
 }
