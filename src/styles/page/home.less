@@ -4,7 +4,7 @@
     z-index: 1;
     color: #fff;
 
-    .device() {
+    .device({
         background-image: url('../../assets/images/banner_1920.png');
         background-size: cover;
         background-position: center;
@@ -12,27 +12,27 @@
         background-attachment: fixed;
         margin-top: 0;
         padding-bottom: 50px;
-    }
+    }); 
 
     .img-banner {
         width: 100%;
 
-        .device() {
+        .device({
             display: none;
-        }
+        }); 
     }
 
     .content {
-        .desktop() {
+        .desktop({
             position: absolute;
             top: 55%;
             left: 50%;
             transform: translate(-50%, -50%);
-        }
+        }); 
 
-        .device() {
+        .device({
             padding: 0 30px;
-        }
+        }); 
 
         text-align: center;
 
@@ -72,9 +72,9 @@
             color: #DF1722;
         }
 
-        .device() {
+        .device({
             font-size: 10px;
-        }
+        }); 
     }
 
     h2 {
@@ -85,9 +85,9 @@
         margin: 0;
         margin-bottom: 40px;
 
-        .device() {
+        .device({
             font-size: 24px;
-        }
+        }); 
     }
 
     .multiple-items {
@@ -182,9 +182,9 @@
             color: #DF1722;
         }
 
-        .device() {
+        .device({
             font-size: 10px;
-        }
+        }); 
     }
 
     h2 {
@@ -195,9 +195,9 @@
         margin: 0;
         margin-bottom: 95px;
 
-        .device() {
+        .device({
             font-size: 24px;
-        }
+        }); 
     }
 
     .constant-slider {
@@ -261,9 +261,9 @@
         > div {
             padding: 0 7px;
 
-            .device() {
+            .device({
                 padding: 0 15px;
-            }
+            }); 
         }
     }
 
@@ -363,10 +363,10 @@
     padding-top: 60px;
     padding-bottom: 40px;
 
-    .desktop() {
+    .desktop({
         background-image: url('../../assets/images/introduce_bn_2.png');
         background-attachment: fixed;
-    }
+    }); 
 
     .content {
         position: relative;
@@ -374,9 +374,9 @@
     }
 
     &::before {
-        .desktop() {
+        .desktop({
             content: "";
-        }
+        }); 
 
         position: absolute;
         width: 100%;
@@ -398,9 +398,9 @@
         &.show-img {
             margin-top: -80px;
 
-            .device() {
+            .device({
                 display: none;
-            }
+            }); 
         }
     }
 
@@ -410,24 +410,24 @@
         max-width: 755px;
         margin: 0 auto;
 
-        .device() {
+        .device({
             padding: 0 30px;
-        }
+        }); 
     }
 
     .lg-size {
         font-size: 18px;
         margin: 15px 0 50px 0;
 
-        .device() {
+        .device({
             font-size: 14px;
-        }
+        }); 
     }
 
     .division-img {
-        .desktop() {
+        .desktop({
             display: none;
-        }
+        }); 
 
         .img-f {
             padding: 0;
@@ -501,19 +501,19 @@
         width: 100%;
         margin-bottom: 115px;
 
-        .device() {
+        .device({
             padding: 0 30px;
-        }
+        }); 
 
         > div {
             display: table-cell;
             width: 50%;
             vertical-align: top;
 
-            .device() {
+            .device({
                 display: block;
                 width: 100%;
-            }
+            }); 
 
             &.vid-show {
                 background-image: url('../../assets/images/vid_thumb.png');
@@ -524,9 +524,9 @@
                 color: #fff;
                 padding: 30px;
 
-                .device() {
+                .device({
                     padding: 15px;
-                }
+                }); 
 
                 h5 {
                     font-size: 11px;
@@ -550,9 +550,9 @@
             &.vid-list {
                 padding-left: 30px;
 
-                .device() {
+                .device({
                     padding-left: 0;
-                }
+                }); 
 
                 ul {
                     padding: 0;
@@ -579,9 +579,9 @@
                                     width: 120px;
                                     position: relative;
 
-                                    .device() {
+                                    .device({
                                         display: none;
-                                    }
+                                    }); 
 
                                     .see-more {
                                         position: absolute;
@@ -691,10 +691,10 @@
         text-align: left;
         margin-bottom: 15px;
 
-        .device() {
+        .device({
             border-radius: 5px;
             margin-bottom: 20px;
-        }
+        }); 
 
         .header {
             font-size: 12px;
@@ -855,17 +855,17 @@
         color: #fff;
 
         .content {
-            .desktop() {
+            .desktop({
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-            }
+            }); 
         }
 
-        .device() {
+        .device({
             padding-top: 60px;
-        }
+        }); 
 
         p {
             font-size: 24px;
@@ -885,9 +885,9 @@
             max-width: 320px;
             margin: 0 auto;
 
-            .device() {
+            .device({
                 max-width: 100%;
-            }
+            }); 
 
             input {
                 width: 100%;

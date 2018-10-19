@@ -148,130 +148,130 @@
 @md-width: 1025px;
 @sm-width: 768px;
 @xxs-width: 481px;
-.xlg {
-    @media screen and (min-width: #{@xlg-width}) {
-        @content;
+.xlg(@content) {
+    @media screen and (min-width: @xlg-width) {
+        @content();
     }
 }
-.lg {
-    @media (min-width: #{@lg-width}) and (max-width: #{@xlg-width - 1px}) {
-        @content;
-    }
-}
-
-.md {
-    @media (min-width: #{@md-width}) and (max-width: #{@lg-width - 1px}) {
-        @content;
+.lg(@content) {
+    @media (min-width: @lg-width) and (max-width: @xlg-width - 1px) {
+        @content();
     }
 }
 
-.sm {
-    @media (min-width: #{@sm-width}) and (max-width: #{@md-width - 1px}) {
-        @content;
+.md(@content) {
+    @media (min-width: @md-width) and (max-width: @lg-width - 1px) {
+        @content();
     }
 }
 
-.xs {
-    @media screen and (max-width: #{@sm-width - 1px}) {
-        @content;
+.sm(@content) {
+    @media (min-width: @sm-width) and (max-width: @md-width - 1px) {
+        @content();
     }
 }
 
-.xxs {
-    @media screen and (max-width: #{@xxs-width - 1px}) {
-        @content;
+.xs(@content) {
+    @media screen and (max-width: @sm-width - 1px) {
+        @content();
     }
 }
 
-.desktop-1 {
-    @media screen and (min-width: #{@md-width - 1px}) {
-        @content;
+.xxs(@content) {
+    @media screen and (max-width: @xxs-width - 1px) {
+        @content();
     }
 }
 
-.desktop {
-    @media screen and (min-width: #{@md-width}) {
-        @content;
+.desktop-1(@content) {
+    @media screen and (min-width: @md-width - 1px) {
+        @content();
     }
 }
 
-.device {
-    @media screen and (max-width: #{@md-width - 1px}) {
-        @content;
-    }
-}
-.device-1 {
-    @media screen and (max-width: #{@md-width - 2px}) {
-        @content;
+.desktop(@content) {
+    @media screen and (min-width: @md-width) {
+        @content();
     }
 }
 
-.tablet {
-    @media (min-width: #{@sm-width}) and (max-width: #{@md-width - 1px}) {
-        @content;
+.device(@content) {
+    @media screen and (max-width: @md-width - 1px) {
+        @content();
+    }
+}
+.device-1(@content) {
+    @media screen and (max-width: @md-width - 2px) {
+        @content();
     }
 }
 
-.tablet-1 {
-    @media (min-width: #{@sm-width}) and (max-width: #{@md-width - 2px}) {
-        @content;
+.tablet(@content) {
+    @media (min-width: @sm-width) and (max-width: @md-width - 1px) {
+        @content();
     }
 }
 
-.bp1024 {
-    @media (min-width: #{@md-width - 1px}) and (max-width: #{@md-width - 1px}) {
-        @content;
+.tablet-1(@content) {
+    @media (min-width: @sm-width) and (max-width: @md-width - 2px) {
+        @content();
     }
 }
 
-.not-mobile {
-    @media (min-width: #{@sm-width}) {
-        @content;
+.bp1024(@content) {
+    @media (min-width: @md-width - 1px) and (max-width: @md-width - 1px) {
+        @content();
     }
 }
-.sm-desktop {
+
+.not-mobile(@content) {
+    @media (min-width: @sm-width) {
+        @content();
+    }
+}
+.sm-desktop(@content) {
     @media screen and (max-width: 1281px) {
-        @content;
+        @content();
     }
 }
-.print {
+.print(@content) {
     @media print {
-        @content;
+        @content();
     }
 }
 
-.iphone5Landscape {
+.iphone5Landscape(@content) {
     @media only screen and (min-device-width: 320px) and (max-device-width: 374px){
-        @content;
+        @content();
     }
 }
 
-.iphonePortrait {
+.iphonePortrait(@content) {
     @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-        @content;
+        @content();
     }
 }
 
-.landscape {
+.landscape(@content) {
     @media screen and (orientation: landscape) {
-        @content;
+        @content();
     }
 }
 
-.portrait {
+.portrait(@content) {
     @media screen and (orientation: portrait) {
-        @content;
+        @content();
     }
 }
 
-.retina {
+.retina(@content) {
     @media screen and (-webkit-min-device-pixel-ratio: 2) {
-        @content;
+        @content();
     }
 }
 
-.print {
+.print(@content) {
     @media print {
-        @content;
+        @content();
     }
 }
