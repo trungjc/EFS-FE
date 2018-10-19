@@ -157,9 +157,9 @@ h2.medium-title {
   position: relative;
   max-width: 1645px;
 }
-@media (min-width: 1200px) and (max-width: 1919px) {
+@media (min-width: 1600px) {
   .container-fluid {
-    max-width: 1170px;
+    max-width: 1500px;
   }
 }
 .btn-green-border {
