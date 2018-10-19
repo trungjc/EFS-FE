@@ -17,8 +17,12 @@
     <script src="scripts/velocity.min.js"></script>
     <script src="scripts/velocity.ui.min.js"></script>
     <script src="scripts/bootstrap-effec.js"></script>
-
     <script src="scripts/typeahead.jquery.js"></script>
+    <!--paralaxx-->
+    <!--<script src="scripts/nbw-parallax.js"></script>
+    <script src="scripts/jquery.localscroll-1.2.7-min.js"></script>
+    <script src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
+    <script src="scripts/jquery.inview.js"></script>-->
 </head>
 <body>
     <header class="main-header">
@@ -484,7 +488,7 @@
         </div>
     </section>
     <section class="explore-section">
-        <div class="container-fluid">
+        <div class="container-fluid" id="second">
             <h3><span> EXPLORE </span></h3>
             <h2>OUR LATEST PRODUCTS</h2>
             <div class="row list">
@@ -611,6 +615,7 @@
             <div>
                 <a class="next-page"><img src="assets/images/down_arrow.png" /></a>
             </div>
+            <div class="oto-bg" style="background-image: url('assets/images/explore_bn.png');"></div>
         </div>
     </section>
     <section class="introduce-section">
@@ -1177,7 +1182,30 @@
     </div>
 
     <script>
-        $(function () {            
+        var setCount = 0;
+        var lastScroll = 0;
+        var elementHeight = $('.oto-bg').height()
+        var pecent = 100
+        $(window).on('resize scroll', function () {
+            //Code here
+            var $target = $('.explore-section .see-more')
+
+            var elementTop = $target.offset().top;
+            var elementBottom = elementTop + $target.outerHeight();
+            var viewportTop = $(window).scrollTop();
+            var viewportBottom = viewportTop + $(window).height();
+            if (elementBottom > viewportTop && elementTop < viewportBottom) {
+                if (viewportTop > lastScroll) {
+                    pecent--
+                }
+                else {
+                    pecent++
+                }
+                $('.oto-bg').css('background-position', '0 ' + pecent + '%')
+                lastScroll = viewportTop
+            }            
+        });
+        $(function () {
             //check mobile
             let winWidth = window.innerWidth
             if (winWidth < 1024) {
