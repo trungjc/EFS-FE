@@ -15,7 +15,7 @@
         background-color: #fff;
         padding-top: 10px;
 
-        @include device() {
+        .device() {
             background-color: #000;
             padding-top: 2px;
             border-bottom: 2px solid #007D2C;
@@ -30,7 +30,7 @@
             padding-top: 10px;
             margin-right: 40px;
 
-            @include device() {
+            .device() {
                 display: inline-block;
             }
         }
@@ -48,7 +48,7 @@
                 display: none;
             }
 
-            @include device() {
+            .device() {
                 color: #fff;
                 padding-left: 15px;
                 padding-top: 12px;
@@ -67,7 +67,7 @@
         .right-top {
             float: right;
 
-            @include device() {
+            .device() {
                 position: absolute;
                 top: 70px;
                 width: 100%;
@@ -101,7 +101,7 @@
                 float: right;
                 padding-top: 12px;
 
-                @include device() {
+                .device() {
                     display: none;
                 }
 
@@ -147,7 +147,7 @@
         background-color: #000;
         text-align: center;
 
-        @include device() {
+        .device() {
             height: auto;
         }
 
@@ -162,7 +162,7 @@
                 &.nav-logo {
                     border-bottom: none;
 
-                    @include device() {
+                    .device() {
                         display: none !important;
                     }
                 }
@@ -419,7 +419,7 @@
     padding: 15px;
     margin: 27px 10px;
 
-    @include device() {
+    .device() {
         margin: 0;
         right: 0;
         margin-top: 5px;
@@ -444,7 +444,7 @@
         position: absolute;
         pointer-events: none;
 
-        @include device() {
+        .device() {
             content: none;
         }
     }
@@ -477,7 +477,7 @@
 }
 
 #mobile_menu {
-    @include device() {
+    .device() {
         position: absolute;
         background-color: rgba(0,0,0,0.8);
         min-height: 100vh;
@@ -493,7 +493,7 @@
         }
 
         .shopping-cart {            
-            @include device() {                
+            .device() {                
                 .user-avatar {
                     color: #fff;
                     float: right;
@@ -532,7 +532,7 @@
 .shop-mobile {
     display: none !important;
 
-    @include device() {
+    .device() {
         display: block !important;
     }
 

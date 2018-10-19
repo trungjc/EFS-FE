@@ -4,7 +4,7 @@
     z-index: 1;
     color: #fff;
 
-    @include device() {
+    .device() {
         background-image: url('../../assets/images/banner_1920.png');
         background-size: cover;
         background-position: center;
@@ -17,20 +17,20 @@
     .img-banner {
         width: 100%;
 
-        @include device() {
+        .device() {
             display: none;
         }
     }
 
     .content {
-        @include desktop() {
+        .desktop() {
             position: absolute;
             top: 55%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
 
-        @include device() {
+        .device() {
             padding: 0 30px;
         }
 
@@ -72,7 +72,7 @@
             color: #DF1722;
         }
 
-        @include device() {
+        .device() {
             font-size: 10px;
         }
     }
@@ -85,7 +85,7 @@
         margin: 0;
         margin-bottom: 40px;
 
-        @include device() {
+        .device() {
             font-size: 24px;
         }
     }
@@ -182,7 +182,7 @@
             color: #DF1722;
         }
 
-        @include device() {
+        .device() {
             font-size: 10px;
         }
     }
@@ -195,7 +195,7 @@
         margin: 0;
         margin-bottom: 95px;
 
-        @include device() {
+        .device() {
             font-size: 24px;
         }
     }
@@ -261,7 +261,7 @@
         > div {
             padding: 0 7px;
 
-            @include device() {
+            .device() {
                 padding: 0 15px;
             }
         }
@@ -363,7 +363,7 @@
     padding-top: 60px;
     padding-bottom: 40px;
 
-    @include desktop() {
+    .desktop() {
         background-image: url('../../assets/images/introduce_bn_2.png');
         background-attachment: fixed;
     }
@@ -374,7 +374,7 @@
     }
 
     &::before {
-        @include desktop() {
+        .desktop() {
             content: "";
         }
 
@@ -398,7 +398,7 @@
         &.show-img {
             margin-top: -80px;
 
-            @include device() {
+            .device() {
                 display: none;
             }
         }
@@ -410,7 +410,7 @@
         max-width: 755px;
         margin: 0 auto;
 
-        @include device() {
+        .device() {
             padding: 0 30px;
         }
     }
@@ -419,13 +419,13 @@
         font-size: 18px;
         margin: 15px 0 50px 0;
 
-        @include device() {
+        .device() {
             font-size: 14px;
         }
     }
 
     .division-img {
-        @include desktop() {
+        .desktop() {
             display: none;
         }
 
@@ -501,7 +501,7 @@
         width: 100%;
         margin-bottom: 115px;
 
-        @include device() {
+        .device() {
             padding: 0 30px;
         }
 
@@ -510,7 +510,7 @@
             width: 50%;
             vertical-align: top;
 
-            @include device() {
+            .device() {
                 display: block;
                 width: 100%;
             }
@@ -524,7 +524,7 @@
                 color: #fff;
                 padding: 30px;
 
-                @include device() {
+                .device() {
                     padding: 15px;
                 }
 
@@ -550,7 +550,7 @@
             &.vid-list {
                 padding-left: 30px;
 
-                @include device() {
+                .device() {
                     padding-left: 0;
                 }
 
@@ -579,7 +579,7 @@
                                     width: 120px;
                                     position: relative;
 
-                                    @include device() {
+                                    .device() {
                                         display: none;
                                     }
 
@@ -691,7 +691,7 @@
         text-align: left;
         margin-bottom: 15px;
 
-        @include device() {
+        .device() {
             border-radius: 5px;
             margin-bottom: 20px;
         }
@@ -855,7 +855,7 @@
         color: #fff;
 
         .content {
-            @include desktop() {
+            .desktop() {
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -863,7 +863,7 @@
             }
         }
 
-        @include device() {
+        .device() {
             padding-top: 60px;
         }
 
@@ -885,7 +885,7 @@
             max-width: 320px;
             margin: 0 auto;
 
-            @include device() {
+            .device() {
                 max-width: 100%;
             }
 

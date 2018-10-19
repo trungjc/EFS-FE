@@ -17,7 +17,7 @@
             color: #fff;
             margin-top: 28px;
 
-            @include sm-desktop() {
+            .sm-desktop() {
                 float: none;
             }
         }
@@ -25,7 +25,7 @@
         .email-group {
             float: right;
 
-            @include sm-desktop() {
+            .sm-desktop() {
                 float: left;
             }
 
@@ -36,12 +36,12 @@
                     width: 295px;
                     margin: 0 35px 0 15px;
 
-                    @include sm-desktop() {
+                    .sm-desktop() {
                         margin-left: 40px;
                         margin-right: 120px;
                     }
 
-                    @include device() {
+                    .device() {
                         margin: 0;
                     }
 
@@ -51,7 +51,7 @@
                         text-align: center;
                         margin-bottom: 5px;
 
-                        @include device() {
+                        .device() {
                             text-align: left;
                         }
                     }
@@ -66,7 +66,7 @@
                     position: relative;
                     margin-top: 20px;
 
-                    @include device() {
+                    .device() {
                         width: 100%;
                         margin-top: 5px;
                         margin-bottom: 15px;
@@ -78,7 +78,7 @@
                         outline: 0;
                         background-color: #F0F0F0;
                         height: 40px;
-                        font-family: $font2;
+                        font-family: @font2;
                         color: #38344D;
                         box-shadow: none;
                         border: 1px solid #f0f0f0;
@@ -93,7 +93,7 @@
                         color: #C2C1C7;
                     }
 
-                    @include sm-desktop() {
+                    .sm-desktop() {
                         width: 352px;
                     }
                 }
@@ -220,7 +220,7 @@
             list-style: none;
             float: left;
 
-            @include device() {
+            .device() {
                 float: none;
             }
 
@@ -228,7 +228,7 @@
                 display: inline-block;
                 padding: 0 10px;
 
-                @include device() {
+                .device() {
                     display: block;
                     text-align: center;
                     margin-bottom: 15px;
@@ -237,7 +237,7 @@
                 img {
                     max-width: 90px;
 
-                    @include device() {
+                    .device() {
                         display: inline-block;
                         max-width: 100%;
                     }
@@ -262,7 +262,7 @@
             list-style: none;
             float: right;
 
-            @include device() {
+            .device() {
                 float: none;
                 text-align: right;
             }

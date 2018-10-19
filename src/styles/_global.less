@@ -1,5 +1,5 @@
 body {
-    font-family: $font1;
+    font-family: @font1;
     font-weight: 500;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -28,7 +28,7 @@ h3.strong-title {
         color: #DF1722;
     }
 
-    @include device() {
+    .device() {
         font-size: 10px;
     }
 }
@@ -36,12 +36,12 @@ h3.strong-title {
 h2.medium-title {
     color: #fff;
     font-size: 38px;
-    font-family: $font1;
+    font-family: @font1;
     font-weight: 700;
     margin: 0;
     margin-bottom: 40px;
 
-    @include device() {
+    .device() {
         font-size: 24px;
     }
 }
@@ -63,7 +63,7 @@ h2.medium-title {
 
 .see-more {
     display: inline-block;
-    font-family: $font1;
+    font-family: @font1;
     font-weight: 700;
     text-transform: uppercase;
     color: #fff;
@@ -161,7 +161,7 @@ h2.medium-title {
     position: relative;
     max-width: 1645px;
 
-    @include lg() {
+    .lg() {
         max-width: 1170px;
     }
 }
@@ -239,7 +239,7 @@ select.select-round {
     display: table;
     width: 100%;
 
-    @include device-1() {
+    .device-1() {
         display: block;
     }
 
@@ -265,7 +265,7 @@ select.select-round {
     text-align: center;
     outline: 0;
 
-    @include device() {
+    .device() {
         top: 10%;
     }
 
@@ -333,7 +333,7 @@ select.select-round {
 }
 
 .row {
-    @include device() {
+    .device() {
         margin: 0;
     }
 }
