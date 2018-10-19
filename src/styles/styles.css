@@ -40,6 +40,11 @@ h3.strong-title {
 h3.strong-title span {
   color: #DF1722;
 }
+@media screen and (max-width: 1024px) {
+  h3.strong-title {
+    font-size: 10px;
+  }
+}
 h2.medium-title {
   color: #fff;
   font-size: 38px;
@@ -47,6 +52,11 @@ h2.medium-title {
   font-weight: 700;
   margin: 0;
   margin-bottom: 40px;
+}
+@media screen and (max-width: 1024px) {
+  h2.medium-title {
+    font-size: 24px;
+  }
 }
 .btn-green {
   font-weight: 700;
@@ -147,6 +157,11 @@ h2.medium-title {
   position: relative;
   max-width: 1645px;
 }
+@media (min-width: 1200px) and (max-width: 1919px) {
+  .container-fluid {
+    max-width: 1170px;
+  }
+}
 .btn-green-border {
   border: 1px solid #fff;
   color: #fff;
@@ -207,6 +222,11 @@ select.select-round {
   display: table;
   width: 100%;
 }
+@media screen and (max-width: 1023px) {
+  .table-respon {
+    display: block;
+  }
+}
 .table-respon > div {
   display: table-cell;
   vertical-align: top;
@@ -226,6 +246,11 @@ select.select-round {
   line-height: 0;
   text-align: center;
   outline: 0;
+}
+@media screen and (max-width: 1024px) {
+  .slick-arrow {
+    top: 10%;
+  }
 }
 .slick-arrow:after {
   -moz-osx-font-smoothing: grayscale;
@@ -280,6 +305,11 @@ select.select-round {
   background-color: #fff;
   color: #DF1722;
   border: 1px solid #DF1722;
+}
+@media screen and (max-width: 1024px) {
+  .row {
+    margin: 0;
+  }
 }
 /*!
 Animate.css - http://daneden.me/animate
