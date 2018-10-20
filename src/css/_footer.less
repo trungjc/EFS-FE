@@ -17,17 +17,21 @@
             color: #fff;
             margin-top: 28px;
 
-            .sm-desktop({
+            .sm-desktop( {
                 float: none;
-            }); 
+            }
+
+            );
         }
 
         .email-group {
             float: right;
 
-            .sm-desktop({
+            .sm-desktop( {
                 float: left;
-            }); 
+            }
+
+            );
 
             > div {
                 float: left;
@@ -36,14 +40,18 @@
                     width: 295px;
                     margin: 0 35px 0 15px;
 
-                    .sm-desktop({
+                    .sm-desktop( {
                         margin-left: 40px;
                         margin-right: 120px;
-                    }); 
+                    }
 
-                    .device({
+                    );
+
+                    .device( {
                         margin: 0;
-                    }); 
+                    }
+
+                    );
 
                     h4 {
                         font-size: 12px;
@@ -51,9 +59,11 @@
                         text-align: center;
                         margin-bottom: 5px;
 
-                        .device({
+                        .device( {
                             text-align: left;
-                        }); 
+                        }
+
+                        );
                     }
 
                     p {
@@ -66,11 +76,13 @@
                     position: relative;
                     margin-top: 20px;
 
-                    .device({
+                    .device( {
                         width: 100%;
                         margin-top: 5px;
                         margin-bottom: 15px;
-                    }); 
+                    }
+
+                    );
 
                     input {
                         width: 100%;
@@ -93,9 +105,11 @@
                         color: #C2C1C7;
                     }
 
-                    .sm-desktop({
+                    .sm-desktop( {
                         width: 352px;
-                    }); 
+                    }
+
+                    );
                 }
 
                 &.logo {
@@ -130,6 +144,16 @@
                 li {
                     font-size: 12px;
                     margin-bottom: 5px;
+
+                    a {
+                        color: #666666;
+                        transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
+
+                        &:hover {
+                            color: #DF1722;
+                            text-decoration: none;
+                        }
+                    }
                 }
             }
 
@@ -220,27 +244,33 @@
             list-style: none;
             float: left;
 
-            .device({
+            .device( {
                 float: none;
-            }); 
+            }
+
+            );
 
             li {
                 display: inline-block;
                 padding: 0 10px;
 
-                .device({
+                .device( {
                     display: block;
                     text-align: center;
                     margin-bottom: 15px;
-                }); 
+                }
+
+                );
 
                 img {
                     max-width: 90px;
 
-                    .device({
+                    .device( {
                         display: inline-block;
                         max-width: 100%;
-                    }); 
+                    }
+
+                    );
                 }
 
                 a {
@@ -262,10 +292,12 @@
             list-style: none;
             float: right;
 
-            .device({
+            .device( {
                 float: none;
                 text-align: right;
-            }); 
+            }
+
+            );
 
             li {
                 display: inline-block;
