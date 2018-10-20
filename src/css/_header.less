@@ -366,7 +366,7 @@
                     width: 100px;
 
                     .qty {
-                        max-width: 30px;
+                        max-width: 17px;
                         border: none;
                         font-size: 18px;
                         font-weight: 700;
@@ -382,9 +382,32 @@
                     .btn-up-down {
                         position: relative;
                         width: 10px;
+                        display: inline-block;
+                        height: 20px;
 
                         a {
                             position: absolute;
+                            font-size: 14px;
+                            color: #2D3A4B;
+                            transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
+                            line-height: 0;
+
+                            i {
+                                line-height: 0;
+                            }
+
+                            &:hover {
+                                color: #DF1722;
+                                text-decoration: none;
+                            }
+
+                            &.btn-up {
+                                top: 10px;
+                            }
+
+                            &.btn-down {
+                                bottom: 2px;
+                            }
                         }
                     }
 
