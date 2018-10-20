@@ -3601,11 +3601,23 @@ header .nav-menu .nav .nav-link {
   width: 100px;
 }
 .drop-cart .cart li > div.price .qty {
-  width: 25px;
+  max-width: 30px;
   border: none;
   font-size: 18px;
   font-weight: 700;
   color: #2D3A4B;
+  -moz-appearance: textfield;
+}
+.drop-cart .cart li > div.price .qty::-webkit-outer-spin-button,
+.drop-cart .cart li > div.price .qty::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.drop-cart .cart li > div.price .btn-up-down {
+  position: relative;
+  width: 10px;
+}
+.drop-cart .cart li > div.price .btn-up-down a {
+  position: absolute;
 }
 .drop-cart .cart li > div.price .price-num {
   font-family: 'Montserrat', sans-serif;

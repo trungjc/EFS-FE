@@ -3,11 +3,11 @@
 function homePage() {
     var setCount = 0;
     var lastScroll = 0;
-    var elementHeight = $('.oto-bg').height()
-    var pecent = 100
+    var elementHeight = $('.oto-bg').height();
+    var pecent = 100;
     $(window).on('resize scroll', function () {
         //Code here
-        var $target = $('.explore-section .see-more')
+        var $target = $('.explore-section .see-more');
 
         var elementTop = $target.offset().top;
         var elementBottom = elementTop + $target.outerHeight();
@@ -15,13 +15,13 @@ function homePage() {
         var viewportBottom = viewportTop + $(window).height();
         if (elementBottom > viewportTop && elementTop < viewportBottom) {
             if (viewportTop > lastScroll) {
-                pecent--
+                pecent--;
             }
             else {
-                pecent++
+                pecent++;
             }
-            $('.oto-bg').css('background-position', '0 ' + pecent + '%')
-            lastScroll = viewportTop
+            $('.oto-bg').css('background-position', '0 ' + pecent + '%');
+            lastScroll = viewportTop;
         }
     });
 
@@ -54,25 +54,25 @@ function homePage() {
         $(carousel.nearestItem().element).next().addClass('active');
     }
     $('#buttons > button').click(function (e) {
-        var b = $(e.target).addClass('down')
-        setTimeout(function () { b.removeClass('down') }, 80)
+        var b = $(e.target).addClass('down');
+        setTimeout(function () { b.removeClass('down') }, 80);
     })
     $(document).keydown(function (e) {
         switch (e.keyCode) {
             case 37:
-                $('#buttons > .left').click()
+                $('#buttons > .left').click();
                 break
             case 39:
-                $('#buttons > .right').click()
+                $('#buttons > .right').click();
         }
     })
     //init video modal
     $('.play-vid').on('click', function () {
-        let vidSrc = $(this).attr('data-video')
-        $('#videoBody').html('<iframe width="560" height="315" src="' + vidSrc + '" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>')
-        $('#modalVideo').modal('show')
+        let vidSrc = $(this).attr('data-video');
+        $('#videoBody').html('<iframe width="560" height="315" src="' + vidSrc + '" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
+        $('#modalVideo').modal('show');
         $('#modalVideo').on('hide.bs.modal', function () {
-            $('#videoBody').html('')
+            $('#videoBody').html('');
         })
     })
     //scroll
@@ -131,13 +131,13 @@ function homePage() {
 }
 $(function () {
     //check mobile
-    let winWidth = window.innerWidth
+    let winWidth = window.innerWidth;
     if (winWidth < 1024) {
         //add class menu
         $('#mobile_menu').addClass('collapse');
         $('#search_group').addClass('collapse');
     }
     if ($('.cms-home-page').length > 0) {
-        homePage()
+        homePage();
     }
 })
