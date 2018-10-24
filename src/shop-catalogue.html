@@ -8,6 +8,7 @@
     <link href="css/plugin/fontawesome-all.css" rel="stylesheet" />
     <link href="css/plugin/bootstrap.min.css" rel="stylesheet" />
     <link href="css/plugin/slick.css" rel="stylesheet" />
+    <link href="css/plugin/nouislider.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/jquery.reflection.js"></script>
@@ -18,6 +19,8 @@
     <script src="js/velocity.ui.min.js"></script>
     <script src="js/bootstrap-effec.js"></script>
     <script src="js/typeahead.jquery.js"></script>
+    <script src="js/nouislider.js"></script>
+    <script src="js/new-function.js"></script>
 </head>
 <body>
     <header class="main-header">
@@ -311,11 +314,10 @@
                             </div>
                             <div class="slide-price">
                                 <h4>FILTER BY PRICE</h4>
-                                <div data-role="rangeslider">
-                                    <label for="price-min">Price:</label>
-                                    <input type="range" name="price-min" id="price-min" value="200" min="0" max="1000">
-                                    <label for="price-max">Price:</label>
-                                    <input type="range" name="price-max" id="price-max" value="800" min="0" max="1000">
+                                <div id="priceRange"></div>
+                                <div class="price-range clearfix">
+                                    <span id="FRange">$100</span>
+                                    <span id="SRange">$1000</span>
                                 </div>
                             </div>
                         </div>

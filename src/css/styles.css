@@ -6336,3 +6336,18 @@ footer .f_bottom .social li a.in-i:hover {
   border-radius: 30px;
   padding: 12px 34px;
 }
+.price-range {
+  margin-top: 29px;
+  padding-left: 10px;
+}
+.price-range span {
+  font-size: 12px;
+  font-weight: 700;
+  color: #AAAAAA;
+}
+.price-range span:fisrt-child {
+  float: left;
+}
+.price-range span:last-child {
+  float: right;
+}
